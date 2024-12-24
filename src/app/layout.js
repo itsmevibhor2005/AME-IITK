@@ -2,6 +2,9 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,9 +25,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black min-h-[200vh]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(234,231,246)] w-[100vw] overflow-x-hidden`}
       >
+        <Header />
+        <BackgroundBeams className="" />
         {children}
+        <Footer />
       </body>
     </html>
   );
