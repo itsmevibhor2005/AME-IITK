@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(234,231,246)] w-[100vw] overflow-x-hidden`}
       >
+        <BackgroundBeams/>
         <Header />
-        <BackgroundBeams className="" />
         {children}
         <Footer />
       </body>
