@@ -2,6 +2,7 @@
 
 import { BorderBeam } from '@/components/ui/border-beam';
 import React, {useState, useEffect} from 'react'
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -32,9 +33,11 @@ const Navbar = () => {
     >
       <BorderBeam borderWidth={2} />
       <ul className="flex justify-around p-4">
+        <Link href="/">
         <li className="text-black font-bold hover:text-purple-800 cursor-pointer hover:scale-125 transition-all">
           Home
         </li>
+        </Link>
         <li className="text-black font-bold hover:text-purple-800 cursor-pointer hover:scale-125 transition-all">
           Activities
         </li>
@@ -47,9 +50,11 @@ const Navbar = () => {
         <li className="text-black font-bold hover:text-purple-800 cursor-pointer hover:scale-125 transition-all">
           Gallery
         </li>
+        <Link href="/contacts">
         <li className="text-black font-bold hover:text-purple-800 cursor-pointer hover:scale-125 transition-all">
           Contact
         </li>
+        </Link>
       </ul>
     </nav>
   );

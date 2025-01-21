@@ -23,9 +23,9 @@ const Hero = () => {
           word="ASSOCIATION OF MECHANICAL ENGINEERS, IIT KANPUR"
         />
       </div>
-      <div className="flex-none w-[70%] h-[90vh] absolute top-14 right-0 z-10">
+      {/* <div className="flex-none w-[70%] h-[90vh] absolute top-14 right-0 z-10">
         <Spline scene="https://prod.spline.design/qsqKwIv3haEfn6Pa/scene.splinecode" className='z-10' />
-      </div>
+      </div> */}
     </div>
   );
 }
