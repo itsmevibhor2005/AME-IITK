@@ -1,0 +1,81 @@
+@keyframes rotateRight {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(25deg);
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        transform: translate(-40%, -50%);
+    }
+}
+
+@keyframes compensateRotation {
+    from {
+        transform: rotateY(55deg) rotateZ(10deg);
+    }
+
+    to {
+        transform: rotateY(30deg) rotateZ(10deg);
+    }
+}
+
+@keyframes compensateRotationRight {
+    from {
+        transform: rotateY(55deg) rotateZ(-10deg);
+    }
+
+    to {
+        transform: rotateY(70deg) rotateZ(-10deg);
+    }
+}
+
+@keyframes glow {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    45% {
+        transform: rotate(-25deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-rotateRight {
+    animation: rotateRight 4s linear infinite alternate;
+}
+
+.animate-moveRight {
+    animation: moveRight 4s linear infinite alternate;
+}
+
+.animate-compensateRotation {
+    animation: compensateRotation 4s linear infinite alternate;
+}
+
+.animate-compensateRotationRight {
+    animation: compensateRotationRight 4s linear infinite alternate;
+}
+
+.animate-glow {
+    animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}

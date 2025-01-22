@@ -5,6 +5,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   :root {
@@ -106,4 +109,26 @@ body {
   background-size: 200% 200%;
 }
 
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-start {
+  scroll-snap-align: start;
+}
+
+.animate-expand-line {
+  animation: expand-line 1.5s forwards;
+}
+
+@keyframes expand-line {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
 
