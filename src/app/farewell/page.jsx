@@ -119,7 +119,7 @@ const Farewell = () => {
         {currentItems.map((item) => (
           <Card
             key={item.id}
-            className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-all"
+            className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform hover:cursor-pointer duration-300 ease-in-out"
           >
             <CardMedia
               component="img"
@@ -134,15 +134,25 @@ const Farewell = () => {
 
       {/* Pagination controls */}
       <div className="flex justify-center items-center mt-8">
-        <InteractiveHoverButtonLeft onClick={handlePrevious}>
-          Prev
-        </InteractiveHoverButtonLeft>
-        <Typography className="mx-4 text-gray-700">
-          Page {currentPage} of {totalPages}
-        </Typography>
-        <InteractiveHoverButtonRight onClick={handleNext}>
-          Next
-        </InteractiveHoverButtonRight>
+        <InteractiveHoverButtonLeft
+                  onClick={handlePrevious}
+                  disabled={currentPage === 1} // Disable Prev button if on first page
+                  className={`${currentPage === 1 ? "bg-gray-400" : "bg-white"}`}
+                >
+                  Prev
+                </InteractiveHoverButtonLeft>
+                <Typography className="mx-4 text-gray-700">
+                  Page {currentPage} of {totalPages}
+                </Typography>
+                <InteractiveHoverButtonRight
+                  onClick={handleNext}
+                  disabled={currentPage === totalPages} // Disable Next button if on last page
+                  className={`${
+                    currentPage === totalPages ? "bg-gray-400" : "bg-white"
+                  }`}
+                >
+                  Next
+                </InteractiveHoverButtonRight>
       </div>
     </div>
   );
