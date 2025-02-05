@@ -32,7 +32,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/activities", label: "Activities" },
-    { href: "/rsd", label: "RSD" },
+    { href: "/IAS", label: "IAS" },
     { href: "/farewell", label: "Farewell" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contacts", label: "Contact" },
