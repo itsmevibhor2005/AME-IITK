@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className="relative min-h-screen">
@@ -33,10 +33,10 @@ const Hero = () => {
           </motion.h1>
         </div>
         <div className="flex-none w-[54%] h-[82vh] rounded-md overflow-hidden">
-          {/* <Spline
+          <Spline
             scene="https://prod.spline.design/nz7oBbrTm7qhLF0x/scene.splinecode"
             onLoad={() => setIsLoading(false)}
-          /> */}
+          />
         </div>
       </div>
     </div>
