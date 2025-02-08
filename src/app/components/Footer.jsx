@@ -11,7 +11,7 @@ const Footer = () => {
       className={cn(
         "relative",
         "w-full",
-        "h-96",
+        "min-h-[30rem]",
         "bg-gray-900",
         "text-white",
         "flex",
@@ -26,7 +26,16 @@ const Footer = () => {
         width={50}
         height={50}
       />
-      <div className={cn("grid", "grid-cols-3", "gap-4", "p-4")}>
+      <div
+        className={cn(
+          "grid",
+          "lg:grid-cols-3",
+          "sm:grid-cols-2",
+          "grid-cols-1",
+          "gap-4",
+          "p-4"
+        )}
+      >
         <div
           className={cn(
             "flex",
@@ -38,14 +47,28 @@ const Footer = () => {
         >
           <nav>
             <h1
-              className={cn("text-4xl", "font-bold", "mb-4", "text-purple-200")}
+              className={cn(
+                "lg:text-4xl",
+                "sm:text-3xl",
+                "text-2xl",
+                "font-bold",
+                "mb-4",
+                "text-purple-200"
+              )}
             >
               Association of Mechanical Engineers
             </h1>
-            <p className={cn("text-2xl", "text-purple-100")}>
+            <p
+              className={cn(
+                "lg:text-2xl",
+                "sm:text-xl",
+                "text-lg",
+                "text-purple-100"
+              )}
+            >
               Indian Institute of Technology, Kanpur
             </p>
-            <p className={cn("text-2xl", "mb-6")}>
+            <p className={cn("lg:text-2xl", "sm:text-xl", "text-lg", "mb-6")}>
               Kanpur, Uttar Pradesh, India
             </p>
             <ul className={cn("flex", "flex-row", "gap-7", "justify-center")}>
@@ -53,7 +76,9 @@ const Footer = () => {
                 <a
                   href="#home"
                   className={cn(
-                    "text-lg",
+                    "lg:text-lg",
+                    "sm:text-base",
+                    "text-sm",
                     "mb-2",
                     "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                   )}
@@ -65,7 +90,9 @@ const Footer = () => {
                 <a
                   href="#about"
                   className={cn(
-                    "text-lg",
+                    "lg:text-lg",
+                    "sm:text-base",
+                    "text-sm",
                     "mb-2",
                     "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                   )}
@@ -77,7 +104,9 @@ const Footer = () => {
                 <a
                   href="#contact"
                   className={cn(
-                    "text-lg",
+                    "lg:text-lg",
+                    "sm:text-base",
+                    "text-sm",
                     "mb-2",
                     "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                   )}
@@ -98,7 +127,16 @@ const Footer = () => {
           )}
         >
           <h2
-            className={cn("text-4xl", "font-bold", "mb-7", "text-purple-200")}
+            className={cn(
+              "lg:text-4xl",
+              "sm:text-3xl",
+              "text-2xl",
+              "font-bold",
+              "lg:mb-7",
+              "sm:mb-5",
+              "mb-3",
+              "text-purple-200"
+            )}
           >
             Follow Us
           </h2>
@@ -123,14 +161,23 @@ const Footer = () => {
         </div>
         <div className={cn("flex", "flex-col", "items-center", "text-center")}>
           <h2
-            className={cn("text-4xl", "font-bold", "mb-7", "text-purple-200")}
+            className={cn(
+              "lg:text-4xl",
+              "sm:text-3xl",
+              "text-2xl",
+              "font-bold",
+              "mb-7",
+              "text-purple-200"
+            )}
           >
             Quick Links
           </h2>
           <ul className={cn("flex", "flex-col", "gap-5", "items-center")}>
             <li
               className={cn(
-                "text-lg",
+                "lg:text-lg",
+                "sm:text-base",
+                "text-sm",
                 "mb-2",
                 "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
               )}
@@ -138,7 +185,9 @@ const Footer = () => {
               <a
                 href="#events"
                 className={cn(
-                  "text-lg",
+                  "lg:text-lg",
+                  "sm:text-base",
+                  "text-sm",
                   "mb-2",
                   "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                 )}
@@ -150,7 +199,9 @@ const Footer = () => {
               <a
                 href="#gallery"
                 className={cn(
-                  "text-lg",
+                  "lg:text-lg",
+                  "sm:text-base",
+                  "text-sm",
                   "mb-2",
                   "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                 )}
@@ -162,7 +213,9 @@ const Footer = () => {
               <a
                 href="#resources"
                 className={cn(
-                  "text-lg",
+                  "lg:text-lg",
+                  "sm:text-base",
+                  "text-sm",
                   "mb-2",
                   "hover:text-purple-400 hover:scale-125 transition-all hover:underline"
                 )}
@@ -174,8 +227,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={cn("text-center", "mt-4")}>
-        <p className="text-xl ">
-          Designed by <span className='text-purple-400'> Web Team, AME </span>
+        <p className="lg:text-xl sm:text-lg text-sm">
+          Designed by <span className="text-purple-400"> Web Team, AME </span>
         </p>
       </div>
       <div className={cn("text-center", "mt-4")}>

@@ -122,7 +122,7 @@ const ContactPage = () => {
     return membersArray.map((member, index) => (
       <motion.div
         key={index}
-        className="relative group flex flex-col items-center justify-center text-center p-6 shadow-lg rounded-lg bg-white w-64 h-80 transition-transform duration-300 cursor-pointer overflow-hidden"
+        className="relative group flex flex-col items-center justify-center text-center p-6 shadow-lg rounded-lg bg-white xl:w-64 w-60 h-80 transition-transform duration-300 cursor-pointer overflow-hidden"
         initial={{ scale: 1 }}
         whileHover={{
           scale: 1.1, // Increase the height of the card
@@ -166,13 +166,13 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(234,231,246)] p-6 flex flex-col items-center">
-      <h1 className="text-6xl underline text-purple-800 font-bold text-center mb-10">
+      <h1 className="lg:text-6xl sm:text-4xl text-3xl underline text-purple-800 font-bold text-center mb-10">
         AME TEAM
       </h1>
 
       {/* Faculty Advisor */}
       <section className="mb-10">
-        <h2 className="text-4xl text-purple-500 font-bold text-center mb-6">
+        <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[0].title}
         </h2>
         <div className="flex justify-center">{renderMembers([members[0]])}</div>
@@ -180,7 +180,7 @@ const ContactPage = () => {
 
       {/* President */}
       <section className="mb-10">
-        <h2 className="text-4xl text-purple-500 font-bold text-center mb-6">
+        <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[1].title}
         </h2>
         <div className="flex justify-center">{renderMembers([members[1]])}</div>
@@ -188,7 +188,7 @@ const ContactPage = () => {
 
       {/* Vice President */}
       <section className="mb-10">
-        <h2 className="text-4xl text-purple-500 font-bold text-center mb-6">
+        <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[2].title}
         </h2>
         <div className="flex justify-center">{renderMembers([members[2]])}</div>
@@ -196,19 +196,19 @@ const ContactPage = () => {
 
       {/* Coordinators */}
       <section className="mb-10">
-        <h2 className="text-4xl text-purple-500 font-bold text-center mb-6">
+        <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[3].title}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-6">
           {renderMembers(members[3].members)}
         </div>
       </section>
       {/* Coordinators */}
       <section className="mb-10">
-        <h2 className="text-4xl text-purple-500 font-bold text-center mb-6">
+        <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[4].title}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-6">
           {renderMembers(members[4].members)}
         </div>
       </section>

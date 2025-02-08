@@ -91,7 +91,7 @@ const Farewell = () => {
 
   return (
     <div className="p-8">
-      <h1 className="text-6xl font-bold text-center mb-5 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">
+      <h1 className="lg:text-6xl text-4xl sm:text-4xl font-bold text-center mb-5 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">
         Farewell
       </h1>
 
@@ -100,7 +100,7 @@ const Farewell = () => {
         {["All", "Nature", "Urban", "People"].map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 rounded-lg text-white font-semibold transition-all ${
+            className={`px-4 py-2 rounded-lg text-white lg:text-base sm:text-sm te font-semibold transition-all ${
               selectedCategory === category
                 ? "bg-purple-700"
                 : "bg-gray-500 hover:bg-purple-500"
@@ -126,7 +126,7 @@ const Farewell = () => {
               height="500"
               image={item.image}
               alt={item.title}
-              className="rounded-t-lg"
+              className="rounded-t-lg object-cover w-full h-full"
             />
           </Card>
         ))}

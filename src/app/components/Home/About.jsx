@@ -13,13 +13,13 @@ const About = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className=" bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium text-transparent md:text-7xl flex flex-col items-center justify-center"
+        className=" bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center  font-medium text-transparent flex flex-col items-center justify-center"
       >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="absolute w-[50vw] text-6xl top-[-10vh] font-bold mb-[40px] text-center tracking-wide text-[rgba(255,255,255,0.8)]"
+          className="absolute w-[70vw] lg:text-6xl sm:top-[-10vh] top-[-20vh] sm:text-5xl text-4xl font-bold lg:mb-[40px] mb-[20px] text-center tracking-wide text-[rgba(255,255,255,0.8)]"
         >
           ABOUT US
         </motion.div>
@@ -29,7 +29,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="tracking-wide text-2xl w-[70vw] block absolute top-[10vh] text-[rgba(255,255,255,0.8)]"
+          className="tracking-wide lg:text-2xl sm:text-xl text-lg w-[80vw] block absolute lg:top-[10vh] sm:top-[5vh] top-[-5vh] text-[rgba(255,255,255,0.8)]"
         >
           The Association of Mechanical Engineers (AME), IIT Kanpur welcomes you
           to its information portal. We provide much needed exposure to real

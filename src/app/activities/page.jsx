@@ -12,7 +12,7 @@ export default function Activities() {
 
   return (
     <div className="h-full py-4 overflow-x-hidden">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <h2 className="max-w-7xl pl-4 mx-auto sm:text-3xl text-2xl lg:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Get to know the events and Activities..
       </h2>
       <Carousel items={cards} initialScroll={2} />
@@ -23,7 +23,7 @@ export default function Activities() {
 const DummyContent = ({ paragraph, images }) => {
   return (
     <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+      <p className="text-neutral-600 dark:text-neutral-400 text-base lg:text-2xl sm:text-xl font-sans lg:max-w-3xl sm:max-w-2xl max-w-xl mx-auto">
         {paragraph}
       </p>
       <div className="flex flex-wrap justify-center gap-4 mt-6">
@@ -34,7 +34,7 @@ const DummyContent = ({ paragraph, images }) => {
             alt={image.alt}
             height={500}
             width={500}
-            className="md:w-[250px] md:h-[250px] h-full w-full object-contain"
+            className="md:w-[250px] lg:h-[250px] sm:h-[200px] h-full w-full object-contain"
           />
         ))}
       </div>

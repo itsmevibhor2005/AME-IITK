@@ -23,9 +23,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-hidden sm:w-[100vw] w-[112vw]">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(234,231,246)] w-[100vw] `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(234,231,246)] sm:w-[100vw] w-[112vw] `}
       >
         {/* <BackgroundBeams/> */}
         <Header />

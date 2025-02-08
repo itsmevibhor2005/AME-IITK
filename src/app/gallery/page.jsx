@@ -102,72 +102,71 @@ const Farewell = () => {
   };
 
   return (
-    <div className="p-8">
-      <h1 className="text-6xl font-bold text-center mb-5 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">
-        Gallery
-      </h1>
-
-      {/* Navbar for categories */}
-      <div className="flex justify-center space-x-4 mb-4">
-        {["All", "Nature", "Urban", "People"].map((category) => (
-          <button
-            key={category}
-            className={`px-4 py-2 rounded-lg text-white font-semibold transition-all ${
-              selectedCategory === category
-                ? "bg-purple-700"
-                : "bg-gray-500 hover:bg-purple-500"
+      <div className="p-8">
+        <h1 className="lg:text-6xl text-4xl sm:text-4xl font-bold text-center mb-5 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700">
+          Gallery
+        </h1>
+  
+        {/* Navbar for categories */}
+        <div className="flex justify-center space-x-4 mb-4">
+          {["All", "Nature", "Urban", "People"].map((category) => (
+            <button
+              key={category}
+              className={`px-4 py-2 rounded-lg text-white lg:text-base sm:text-sm te font-semibold transition-all ${
+                selectedCategory === category
+                  ? "bg-purple-700"
+                  : "bg-gray-500 hover:bg-purple-500"
+              }`}
+              onClick={() => handleCategoryChange(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <div className="relative">
+          <div className="absolute w-full h-1 bg-purple-700 mb-5 opacity-50 top-1/2 transform -translate-y-1/2 animate-expand-line"></div>
+        </div>
+        {/* Gallery grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {currentItems.map((item) => (
+            <Card
+              key={item.id}
+              className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform  duration-300 ease-in-out hover:cursor-pointer"
+            >
+              <CardMedia
+                component="img"
+                height="500"
+                image={item.image}
+                alt={item.title}
+                className="rounded-t-lg object-cover w-full h-full"
+              />
+            </Card>
+          ))}
+        </div>
+  
+        {/* Pagination controls */}
+        <div className="flex justify-center items-center mt-8">
+          <InteractiveHoverButtonLeft
+            onClick={handlePrevious}
+            disabled={currentPage === 1} // Disable Prev button if on first page
+            className={`${currentPage === 1 ? "bg-gray-400" : "bg-white"}`}
+          >
+            Prev
+          </InteractiveHoverButtonLeft>
+          <Typography className="mx-4 text-gray-700">
+            Page {currentPage} of {totalPages}
+          </Typography>
+          <InteractiveHoverButtonRight
+            onClick={handleNext}
+            disabled={currentPage === totalPages} // Disable Next button if on last page
+            className={`${
+              currentPage === totalPages ? "bg-gray-400" : "bg-white"
             }`}
-            onClick={() => handleCategoryChange(category)}
           >
-            {category}
-          </button>
-        ))}
-      </div>
-      <div className="relative">
-        <div className="absolute w-full h-1 bg-purple-700 mb-5 opacity-50 top-1/2 transform -translate-y-1/2 animate-expand-line"></div>
-      </div>
-      {/* Gallery grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {currentItems.map((item) => (
-          <Card
-            key={item.id}
-            className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform hover:cursor-pointer duration-300 ease-in-out"
-          >
-            <CardMedia
-              component="img"
-              height="500"
-              image={item.image}
-              alt={item.title}
-              className="rounded-t-lg"
-            />
-          </Card>
-        ))}
-      </div>
-
-      {/* Pagination controls */}
-      <div className="flex justify-center items-center mt-8">
-        <InteractiveHoverButtonLeft
-          onClick={handlePrevious}
-          disabled={currentPage === 1} // Disable Prev button if on first page
-          className={`${currentPage === 1 ? "bg-gray-400" : "bg-white"}`}
-        >
-          Prev
-        </InteractiveHoverButtonLeft>
-        <Typography className="mx-4 text-gray-700">
-          Page {currentPage} of {totalPages}
-        </Typography>
-        <InteractiveHoverButtonRight
-          onClick={handleNext}
-          disabled={currentPage === totalPages} // Disable Next button if on last page
-          className={`${
-            currentPage === totalPages ? "bg-gray-400" : "bg-white"
-          }`}
-        >
-          Next
-        </InteractiveHoverButtonRight>
-      </div>
-    </div>
-  );
+            Next
+          </InteractiveHoverButtonRight>
+        </div>
+      </div>);
 };
 
 export default Farewell;
