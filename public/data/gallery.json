@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Sunset",
+    "image": "/images/gallery/sunset.jpg",
+    "category": "Nature"
+  },
+  {
+    "id": 2,
+    "title": "Mountains",
+    "image": "/images/gallery/mountains.jpg",
+    "category": "Nature"
+  },
+  {
+    "id": 3,
+    "title": "Cityscape",
+    "image": "/images/gallery/cityscape.jpg",
+    "category": "Urban"
+  },
+  {
+    "id": 4,
+    "title": "Bridge",
+    "image": "/images/gallery/bridge.jpg",
+    "category": "Urban"
+  },
+  {
+    "id": 5,
+    "title": "Flowers",
+    "image": "/images/gallery/flowers.jpg",
+    "category": "Nature"
+  },
+  {
+    "id": 6,
+    "title": "Portrait",
+    "image": "/images/gallery/portrait.jpg",
+    "category": "People"
+  },
+  {
+    "id": 7,
+    "title": "Concert",
+    "image": "/images/gallery/concert.jpg",
+    "category": "People"
+  },
+  {
+    "id": 8,
+    "title": "Ocean",
+    "image": "/images/gallery/ocean.jpg",
+    "category": "Nature"
+  },
+  {
+    "id": 9,
+    "title": "Forest",
+    "image": "/images/gallery/forest.jpg",
+    "category": "Nature"
+  },
+  {
+    "id": 10,
+    "title": "Desert",
+    "image": "/images/gallery/desert.jpg",
+    "category": "Nature"
+  }
+]

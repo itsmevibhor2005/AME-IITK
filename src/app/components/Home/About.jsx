@@ -19,7 +19,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="absolute w-[70vw] lg:text-6xl sm:top-[-10vh] top-[-20vh] sm:text-5xl text-4xl font-bold lg:mb-[40px] mb-[20px] text-center tracking-wide text-[rgba(255,255,255,0.8)]"
+          className="absolute w-[70vw] lg:text-6xl sm:top-[-10vh] top-[-20vh] sm:text-5xl text-4xl font-bold font-nunito lg:mb-[40px] mb-[20px] text-center tracking-wide text-[rgba(255,255,255,0.8)]"
         >
           ABOUT US
         </motion.div>
@@ -29,7 +29,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="tracking-wide lg:text-2xl sm:text-xl text-lg w-[80vw] block absolute lg:top-[10vh] sm:top-[5vh] top-[-5vh] text-[rgba(255,255,255,0.8)]"
+          className="tracking-wide lg:text-2xl  sm:text-xl text-lg font-nunito w-[80vw] block absolute lg:top-[10vh] sm:top-[5vh] top-[-5vh] text-[rgba(255,255,255,0.8)]"
         >
           The Association of Mechanical Engineers (AME), IIT Kanpur welcomes you
           to its information portal. We provide much needed exposure to real

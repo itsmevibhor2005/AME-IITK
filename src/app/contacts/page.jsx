@@ -1,122 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+// import contacts from "/data/contacts.json";
 
 const ContactPage = () => {
-  const members = [
-    {
-      title: "Faculty Advisor",
-      name: "Dr. ABC",
-      image: "https://picsum.photos/150",
-      description: "The Faculty Advisor of the club.",
-      email: "abc@iitk.ac.in",
-      phone: "+91 98765 43210",
-    },
-    {
-      title: "President",
-      name: "John Doe",
-      image: "https://picsum.photos/150",
-      description: "The President of the club, overseeing all activities.",
-      email: "john.doe@example.com",
-      phone: "+91 87654 32109",
-    },
-    {
-      title: "Vice President",
-      name: "Jane Smith",
-      image: "https://picsum.photos/150",
-      description: "The Vice President of the club.",
-      email: "jane.smith@example.com",
-      phone: "+91 76543 21098",
-    },
-    {
-      title: "Coordinators",
-      members: [
-        {
-          name: "Mark Lee",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Events.",
-          email: "mark.lee@example.com",
-          phone: "+91 65432 10987",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-      ],
-    },
-    {
-      title: "Secretaries",
-      members: [
-        {
-          name: "Mark Lee",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Events.",
-          email: "mark.lee@example.com",
-          phone: "+91 65432 10987",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-        {
-          name: "Lucy Brown",
-          image: "https://picsum.photos/150",
-          description: "Coordinator of Logistics.",
-          email: "lucy.brown@example.com",
-          phone: "+91 54321 09876",
-        },
-      ],
-    },
-  ];
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/contacts.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log("Fetched members:", data.members); // Log fetched data
+        setMembers(data.members);
+      });
+  }, []);
+
+ 
 
   const renderMembers = (membersArray) => {
     return membersArray.map((member, index) => (
@@ -142,7 +42,7 @@ const ContactPage = () => {
             className="w-40 h-40 rounded-full mb-4 object-cover"
           />
           <h3 className="text-lg font-semibold">{member.name}</h3>
-          <p className="text-sm text-gray-600">{member.description}</p>
+          {/* <p className="text-sm text-gray-600">{member.description}</p> */}
         </div>
 
         {/* Hidden details visible on hover */}
@@ -150,14 +50,19 @@ const ContactPage = () => {
           transition={{ delay: 1 }}
           className="relative inset-0 flex items-center justify-center group-hover:flex flex-col mt-4 text-sm text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200 z-10"
         >
-          <p>
-            <span className="text-purple-400">Email: </span>
-            {member.email}
+          <p className="hover:underline">
+            <span className="text-purple-400 ">Email: </span>
+            <a
+              href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${member.email}`}
+              target="_blank"
+            >
+              {member.email}
+            </a>
           </p>
-          <p>
+          {/* <p>
             <span className="text-purple-400">Phone: </span>
             {member.phone}
-          </p>
+          </p> */}
         </motion.div>
         <div className="absolute inset-0 group-hover:h-[400px] transition-all duration-300"></div>
       </motion.div>
@@ -170,8 +75,10 @@ const ContactPage = () => {
         AME TEAM
       </h1>
 
-      {/* Faculty Advisor */}
-      <section className="mb-10">
+      {members.length ? (<>
+
+        {/* Faculty Advisor */}
+        <section className="mb-10">
         <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[0].title}
         </h2>
@@ -186,8 +93,8 @@ const ContactPage = () => {
         <div className="flex justify-center">{renderMembers([members[1]])}</div>
       </section>
 
-      {/* Vice President */}
-      <section className="mb-10">
+{/* Vice President */}
+<section className="mb-10">
         <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[2].title}
         </h2>
@@ -212,6 +119,11 @@ const ContactPage = () => {
           {renderMembers(members[4].members)}
         </div>
       </section>
+      </>
+       ) : (
+        <div className="text-center">Loading...</div>
+      )
+    }
     </div>
   );
 };

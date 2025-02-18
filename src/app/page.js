@@ -7,17 +7,23 @@ import Hero from "./components/Home/Hero";
 import Insta from "./components/Home/insta";
 import About from "./components/Home/About";
 import { useState } from "react";
+import Head from "next/head";
+
 export default function Home() {
   //  const [loading, setLoading] = useState(true);
   
   return (
-     <div
-    >
-
-      {/* {loading && <Loader onComplete={() => setLoading(false)} />} */}
-      <Hero />
-      <About />
-      <Insta />
-    </div>
+    <>
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+      
+    </Head>
+    <div>
+        {/* {loading && <Loader onComplete={() => setLoading(false)} />} */}
+        <Hero />
+        <About />
+        <Insta />
+      </div>
+    </>
   );
 }

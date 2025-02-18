@@ -1,62 +1,38 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardMedia, Typography } from "@mui/material";
 import { InteractiveHoverButtonLeft } from "@/components/ui/interactive-hover-button-left";
 import { InteractiveHoverButtonRight } from "@/components/ui/interactive-hover-button-next";
 
 const Farewell = () => {
   // Sample images, titles, and categories for the gallery
-  const galleryItems = [
-    {
-      id: 1,
-      title: "Sunset",
-      image: "https://picsum.photos/200/300",
-      category: "Nature",
-    },
-    {
-      id: 2,
-      title: "Mountains",
-      image: "https://picsum.photos/200/300?random=1",
-      category: "Nature",
-    },
-    {
-      id: 3,
-      title: "Cityscape",
-      image: "https://picsum.photos/200/300?random=2",
-      category: "Urban",
-    },
-    {
-      id: 4,
-      title: "Bridge",
-      image: "https://picsum.photos/200/300?random=3",
-      category: "Urban",
-    },
-    {
-      id: 5,
-      title: "Flowers",
-      image: "https://picsum.photos/200/300?random=4",
-      category: "Nature",
-    },
-    {
-      id: 6,
-      title: "Portrait",
-      image: "https://picsum.photos/200/300?random=5",
-      category: "People",
-    },
-    {
-      id: 7,
-      title: "Concert",
-      image: "https://picsum.photos/200/300?random=6",
-      category: "People",
-    },
-    {
-      id: 8,
-      title: "Ocean",
-      image: "https://picsum.photos/200/300?random=7",
-      category: "Nature",
-    },
-  ];
+  const [galleryItems, setGalleryItems] = useState([]);
+  const [categories, setCategories] = useState([]);
+   useEffect(() => {
+      const fetchGalleryItems = async () => {
+        try {
+          const res = await fetch("/data/farewell.json");
+          const data = await res.json();
+          setGalleryItems(data);
+        } catch (err) {
+          console.error("Error fetching gallery data:", err);
+        }
+      };
+
+      const fetchCategories = async () => {
+        try {
+          const res = await fetch("/data/farewell-category.json");
+          const data = await res.json();
+          setCategories(data.category);
+        } catch (err) {
+          console.error("Error fetching categories data:", err);
+        }
+      };
+
+      fetchGalleryItems();
+      fetchCategories();
+    }, []);
 
   // Pagination and filtering state
   const [currentPage, setCurrentPage] = useState(1);
@@ -97,7 +73,7 @@ const Farewell = () => {
 
       {/* Navbar for categories */}
       <div className="flex justify-center space-x-4 mb-4">
-        {["All", "Nature", "Urban", "People"].map((category) => (
+        {categories.map((category) => (
           <button
             key={category}
             className={`px-4 py-2 rounded-lg text-white lg:text-base sm:text-sm te font-semibold transition-all ${
@@ -115,22 +91,29 @@ const Farewell = () => {
         <div className="absolute w-full h-1 bg-purple-700 mb-5 opacity-50 top-1/2 transform -translate-y-1/2 animate-expand-line"></div>
       </div>
       {/* Gallery grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {currentItems.map((item) => (
-          <Card
-            key={item.id}
-            className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform  duration-300 ease-in-out hover:cursor-pointer"
-          >
-            <CardMedia
-              component="img"
-              height="500"
-              image={item.image}
-              alt={item.title}
-              className="rounded-t-lg object-cover w-full h-full"
-            />
-          </Card>
-        ))}
-      </div>
+      {galleryItems.length ? (<>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {currentItems.map((item) => (
+                  <Card
+                    key={item.id}
+                    className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform  duration-300 ease-in-out hover:cursor-pointer"
+                  >
+                    <CardMedia
+                      component="img"
+                      height="500"
+                      image={item.image}
+                      alt={item.title}
+                      className="rounded-t-lg object-cover w-full h-full"
+                    />
+                  </Card>
+                ))}
+              </div>
+                </>
+                ): (
+                  <p className="text-center"> Loading .... </p>
+                )}
+        
 
       {/* Pagination controls */}
       <div className="flex justify-center items-center mt-8">

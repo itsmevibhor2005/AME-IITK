@@ -1,17 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MuseoModerno } from "next/font/google";
 
+const museo = MuseoModerno({ subsets: ["latin"], weight: ["400"] });
 const InstagramSection = () => {
+  const [insta, setInsta] = useState([]);
+  useEffect(() =>{
+    fetch("/data/instaLinks.json")
+      .then((res) => res.json())
+      .then((data) => setInsta(data.instagramLinks))
+      .catch((err) => console.error("Error fetching Instagram data:", err));
+  },[]);
   return (
     <div className="text-center relative my-6 min-h-[100vh]">
       {/* Heading */}
-      <h1 className="sm:text-5xl text-4xl lg:text-6xl font-bold mb-6">
-        Latest Stories Running Around
+      <h1 className="sm:text-5xl font-museo text-purple-600 text-4xl lg:text-7xl mb-6">
+        Featured Stories
       </h1>
-      <motion.div
-        className="bg-black relative top-[-15px] h-1 mx-auto"
+      {insta.length ? (
+        <>
+        <motion.div
+        className="bg-purple-600 relative top-[-15px] h-1 mx-auto"
         style={{ width: "0px" }}
         whileInView={{ width: "75vw" }}
         transition={{
@@ -28,7 +39,7 @@ const InstagramSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="mx-auto"
         >
-          <InstagramEmbedCustom url="https://www.instagram.com/p/DD-Xn5TzkkC/" />
+          <InstagramEmbedCustom url= {insta[0]} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -36,17 +47,18 @@ const InstagramSection = () => {
           transition={{ delay: 0.2 }}
           className="mx-auto"
         >
-          <InstagramEmbedCustom url="https://www.instagram.com/p/C-vSuAoONik/" />
+          <InstagramEmbedCustom url={insta[1]} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="mx-auto"
-        >
-          <InstagramEmbedCustom url="https://www.instagram.com/p/C-aZLMBogSZ/" />
+          >
+          <InstagramEmbedCustom url={insta[2]} />
         </motion.div>
       </div>
+      </>) : (<p>Loading...</p>)}
     </div>
   );
 };
