@@ -15,7 +15,7 @@ const Farewell = () => {
       try {
         const res = await fetch("/data/gallery.json");
         const data = await res.json();
-        setGalleryItems(data);
+        setGalleryItems(data.images);
       } catch (err) {
         console.error("Error fetching gallery data:", err);
       }
