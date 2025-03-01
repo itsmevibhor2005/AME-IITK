@@ -12,7 +12,7 @@ export default function Activities() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/activities.json");
+        const res = await fetch("/data/Activities/activities.json");
         const data = await res.json();
         setInitialData(data);
       } catch (err) {

@@ -14,7 +14,7 @@ const Farewell = () => {
   useEffect(() => {
     const fetchGalleryItems = async () => {
       try {
-        const res = await fetch("/data/gallery.json");
+        const res = await fetch("/data/Gallery/gallery.json");
         const data = await res.json();
         setGalleryItems(data.images);
       } catch (err) {
@@ -24,7 +24,7 @@ const Farewell = () => {
 
       const fetchCategories = async () => {
         try {
-          const res = await fetch("/data/gallery-category.json");
+          const res = await fetch("/data/Gallery/gallery-category.json");
           const data = await res.json();
           setCategories(data.category);
         } catch (err) {

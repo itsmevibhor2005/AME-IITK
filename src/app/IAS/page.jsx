@@ -14,7 +14,7 @@ export default function IndustryAcademiaSymposium() {
   useEffect(() => {
       const fetchGalleryItems = async () => {
         try {
-          const res = await fetch("/data/rsd.json");
+          const res = await fetch("/data/RSD/rsd.json");
           const data = await res.json();
           setGalleryItems(data.images);
         } catch (err) {
@@ -24,7 +24,7 @@ export default function IndustryAcademiaSymposium() {
   
         const fetchCategories = async () => {
           try {
-            const res = await fetch("/data/rsd-category.json");
+            const res = await fetch("/data/RSD/rsd-category.json");
             const data = await res.json();
             setCategories(data.category);
           } catch (err) {
@@ -38,7 +38,7 @@ export default function IndustryAcademiaSymposium() {
     // Pagination and filtering state
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const itemsPerPage = 8;
+    const itemsPerPage = 4;
   
     // Filter items based on the selected category
     const filteredItems =

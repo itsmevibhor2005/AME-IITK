@@ -9,7 +9,7 @@ const ContactPage = () => {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch("/data/contacts.json")
+    fetch("/data/Contacts/contacts.json")
       .then((res) => res.json())
       .then((data) => {
         // console.log("Fetched members:", data.members); // Log fetched data
