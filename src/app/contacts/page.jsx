@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import contacts from "/data/contacts.json";
 
 const ContactPage = () => {
@@ -121,7 +122,13 @@ const ContactPage = () => {
       </section>
       </>
        ) : (
-        <div className="text-center">Loading...</div>
+        <Image
+                src="/Gears.gif"
+                alt="Logo"
+                width={400}
+                height={400}
+                className=""
+              />
       )
     }
     </div>

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Card, CardMedia, Typography } from "@mui/material";
 import { InteractiveHoverButtonLeft } from "@/components/ui/interactive-hover-button-left";
 import { InteractiveHoverButtonRight } from "@/components/ui/interactive-hover-button-next";
+import Image from "next/image";
 
 const Farewell = () => {
   // Sample images, titles, and categories for the gallery
@@ -73,7 +74,7 @@ const Farewell = () => {
         </h1>
   
         {/* Navbar for categories */}
-        <div className="flex justify-center space-x-4 mb-4">
+        <div className="flex flex-wrap gap-4 justify-center space-x-4 mb-4">
           {categories.map((category) => (
             <button
               key={category}
@@ -112,7 +113,13 @@ const Farewell = () => {
         </div>
           </>
           ): (
-            <p className="text-center"> Loading .... </p>
+            <Image
+                    src="/Gears.gif"
+                    alt="Logo"
+                    width={400}
+                    height={400}
+                    className=""
+                  />
           )}
   
         {/* Pagination controls */}

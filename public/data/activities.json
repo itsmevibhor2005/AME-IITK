@@ -1,380 +1,202 @@
 [
   {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
+    "title": "Industrial Visit to HAL, Kanpur",
+    "src": "/images/activities/Industrial_Visit/Cover.jpg",
     "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life. jzhsgfjzhgfgf sfiszgzfauf haisfiasfh hiashfiauh afiusfifias iasfgWEF SF ASUYFIUAIFUQ iuhisug iduhgiushegwsefdix siuhiwsehf sduhfsiuhiuh uhfisufh",
+      "paragraph": "On January 11, 2025, the Association of Mechanical Engineers (AME), IIT Kanpur, organized an enriching industrial visit to Hindustan Aeronautics Limited (HAL), Kanpur, for mechanical engineering students. The visit offered an exclusive glimpse into the cutting-edge manufacturing processes, advanced technologies, and real-world applications of engineering. Students had the opportunity to interact with industry experts, enhancing their understanding of how theoretical concepts translate into groundbreaking innovations. It was a day of inspiration, learning, and exploration, leaving everyone motivated to soar to new heights!",
       "images": [
         {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
+          "src": "/images/activities/Industrial_Visit/1.jpg",
           "alt": "Artificial Intelligence concept"
         },
         {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Industrial_Visit/2.jpg",
+          "alt": "#01"
+        }
+        
+      ]
+    }
+  },
+  {
+    "title": "MATLAB Workshop",
+    "src": "/images/activities/Matlab/Cover.jpg",
+    "content": {
+      "paragraph": "The AME successfully organized a two-day MathWorks Workshop on September 30 and October 1, 2024, at Lecture Hall 18, offering hands-on training in MATLAB and Simulink. The workshop addressed fundamental concepts, including the basics of MATLAB, symbolic mathematics, and solution techniques for ordinary differential equations (ODEs) through examples such as projectile motion and mass-spring-damper systems. Participants also learned about Simulink's ODE solutions, partial differential equations (PDEs), and applications like the one-dimensional heat equation. The event attracted a diverse group of students and professionals. On the second day, which took place in Lecture Hall 7, the focus shifted to advanced topics, including the applications of artificial intelligence within MATLAB and an introduction to Simscape. The workshop concluded with a presentation highlighting MathWorks’ resources for ongoing learning, followed by an engaging Q&A session. Led by Mr. Rohit Bhattacharya from MathWorks, the sessions were highly interactive, encouraging participants to actively engage in problem-solving and applying theoretical concepts in real-time. Attendees expressed gratitude for the workshop's practical approach and the depth of knowledge shared.rtificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life. jzhsgfjzhgfgf sfiszgzfauf haisfiasfh hiashfiauh afiusfifias iasfgWEF SF ASUYFIUAIFUQ iuhisug iduhgiushegwsefdix siuhiwsehf sduhfsiuhiuh uhfisufh",
+      "images": [
+        {
+          "src": "/images/activities/Matlab/01.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/02.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/03.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/04.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/05.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/06.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Matlab/07.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/08.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/09.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/10.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/11.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/12.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/13.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/14.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/15.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/16.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/17.jpg",
+          "alt": "#01"
+        },
+        {
+          "src": "/images/activities/Matlab/18.jpg",
+          "alt": "#01"
         }
       ]
     }
   },
   {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
+    
+    "title": "AK Mallik Lecture",
+    "src": "/images/activities/A_K_Mallik/Cover.jpg",
     "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
+      "paragraph": "On August 8, 2024, Professor Ashok Kumar Mallik, a retired faculty member from IIT Kanpur's Mechanical Engineering Department, delivered an engaging talk titled, \"Curious Consequences of Simple Sequences\". The lecture, aimed at a general audience, explored a variety of mathematical sequences and series, such as the Sîndel sequence, Farey sequence, and Fibonacci-Hemchandra sequence, along with their intriguing properties and real-world applications. He also discussed decimal patterns, parasite numbers, and the implications of these sequences in broader mathematical contexts.\nThe second half of the talk delved into the Harmonic series, highlighting its divergence and the slow rate of this divergence, and discussed topics like the Euler-Mascheroni constant, Kempner series, and the behaviour of prime-related series. Professor Mallik briefly touched on Euler's 'Golden Key' and concluded with insights into alternating series, including Riemann's significant findings. The talk showcased the fascinating interplay between seemingly simple mathematical concepts and their profound consequences.",
       "images": [
         {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
+          "src": "/images/activities/A_K_Mallik/01.jpg",
           "alt": "Artificial Intelligence concept"
         },
         {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/02.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/03.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/04.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/05.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/06.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/07.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/A_K_Mallik/08.jpg",
+          "alt": "#01"
         }
       ]
     }
   },
   {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
+    "title": "Fresher’s Event - Aarambh'24",
+    "src": "/images/activities/Aarambh_24/cover.jpg",
     "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
+      "paragraph": "Aarambh'24, the much-anticipated event organized by the Association of Mechanical Engineers (AME) Society at IIT Kanpur, successfully brought together the Y24 batch of students for an evening of camaraderie and entertainment on August 10th, 2024. The event, held in Lecture Hall 7, started with interactive sessions where new students had the chance to meet and network with their seniors and peers. This was followed by an open mic session, where participants showcased a diverse array of talents, from music performances to poetry recitals, leaving the audience thoroughly entertained and inspired.\nThe atmosphere was vibrant as students engaged in various games that offered exciting prizes, adding a competitive yet fun element to the evening. The event lived up to its promise of fostering connections and providing a platform for students to express themselves. The performances were met with enthusiastic applause, creating memorable moments for both performers and the audience. Aarambh'24 successfully set the tone for the new academic year, with students leaving the event feeling welcomed, motivated, and eager to embark on their journey at IIT Kanpur.",
       "images": [
         {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
+          "src": "/images/activities/Aarambh_24/01.jpg",
           "alt": "Artificial Intelligence concept"
         },
         {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/02.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/03.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/04.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/05.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/06.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/07.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
+          "src": "/images/activities/Aarambh_24/08.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/09.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/10.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/11.jpg",
+          "alt": "#01"
         },
         {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Artificial Intelligence is revolutionizing the world. Explore its potential to enhance creativity, productivity, and problem-solving in everyday life.",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
-        }
-      ]
-    }
-  },
-  {
-    "category": "Artificial Intelligence",
-    "title": "You can do more with AI.",
-    "src": "/images/activities/artificial-intelligence/cover.jpg",
-    "content": {
-      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunce lorem ipsum",
-      "images": [
-        {
-          "src": "/images/activities/artificial-intelligence/1.jpg",
-          "alt": "Artificial Intelligence concept"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/2.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/3.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/4.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/5.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/6.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/7.jpg",
-          "alt": "AI transforming productivity"
-        },
-        {
-          "src": "/images/activities/artificial-intelligence/8.jpg",
-          "alt": "AI transforming productivity"
+          "src": "/images/activities/Aarambh_24/12.jpg",
+          "alt": "#01"
         }
       ]
     }
   }
+  
+  
 ]

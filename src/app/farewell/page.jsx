@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Card, CardMedia, Typography } from "@mui/material";
 import { InteractiveHoverButtonLeft } from "@/components/ui/interactive-hover-button-left";
 import { InteractiveHoverButtonRight } from "@/components/ui/interactive-hover-button-next";
+import Image from "next/image";
 
 const Farewell = () => {
   // Sample images, titles, and categories for the gallery
@@ -111,7 +112,13 @@ const Farewell = () => {
               </div>
                 </>
                 ): (
-                  <p className="text-center"> Loading .... </p>
+                  <Image
+                          src="/Gears.gif"
+                          alt="Logo"
+                          width={400}
+                          height={400}
+                          className=""
+                        />
                 )}
         
 
