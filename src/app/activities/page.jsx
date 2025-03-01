@@ -54,17 +54,20 @@ export default function Activities() {
       <h2 className="max-w-7xl pl-4 mx-auto sm:text-3xl text-2xl lg:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Get to know the events and Activities..
       </h2>
-      {data.length ? (<>
-      <Carousel items={cards} initialScroll={2} />
-      </>)
-      : (
-        <Image
-                src="/Gears.gif"
-                alt="Logo"
-                width={400}
-                height={400}
-                className=""
-              />
+      {data.length ? (
+        <>
+          <Carousel items={cards} initialScroll={2} />
+        </>
+      ) : (
+        <div className="flex justify-center items-center h-full">
+          <Image
+            src="/Gears.gif"
+            alt="Logo"
+            width={400}
+            height={400}
+            className="text-center"
+          />
+        </div>
       )}
     </div>
   );
