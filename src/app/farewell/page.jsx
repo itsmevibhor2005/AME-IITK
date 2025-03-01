@@ -92,35 +92,36 @@ const Farewell = () => {
         <div className="absolute w-full h-1 bg-purple-700 mb-5 opacity-50 top-1/2 transform -translate-y-1/2 animate-expand-line"></div>
       </div>
       {/* Gallery grid */}
-      {galleryItems.length ? (<>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {currentItems.map((item) => (
-                  <Card
-                    key={item.id}
-                    className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform  duration-300 ease-in-out hover:cursor-pointer"
-                  >
-                    <CardMedia
-                      component="img"
-                      height="500"
-                      image={item.image}
-                      alt={item.title}
-                      className="rounded-t-lg object-cover w-full h-full"
-                    />
-                  </Card>
-                ))}
-              </div>
-                </>
-                ): (
-                  <Image
-                          src="/Gears.gif"
-                          alt="Logo"
-                          width={400}
-                          height={400}
-                          className=""
-                        />
-                )}
-        
+      {galleryItems.length ? (
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {currentItems.map((item) => (
+              <Card
+                key={item.id}
+                className="shadow-xl opacity-75 hover:opacity-100 h-[400px] hover:shadow-2xl hover:scale-105 transition-transform  duration-300 ease-in-out hover:cursor-pointer"
+              >
+                <CardMedia
+                  component="img"
+                  height="500"
+                  image={item.image}
+                  alt={item.title}
+                  className="rounded-t-lg object-cover w-full h-full"
+                />
+              </Card>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className="flex justify-center items-center h-full">
+          <Image
+            src="/Gears.gif"
+            alt="Logo"
+            width={400}
+            height={400}
+            className="text-center"
+          />
+        </div>
+      )}
 
       {/* Pagination controls */}
       <div className="flex justify-center items-center mt-8">
