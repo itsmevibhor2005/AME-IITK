@@ -11,8 +11,8 @@ const ParticipatingInstitutes = () => {
      slidesToShow: 4,
      slidesToScroll: 1,
      autoplay: true,
-     speed: 2000,
-     autoplaySpeed: 1500,
+     speed: 3000,
+     autoplaySpeed: 0,
      cssEase: "linear",
      rtl: true,
    };

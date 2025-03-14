@@ -11,8 +11,8 @@ const ParticipatingIndustries = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 1500,
+    speed: 3000, // Reduce animation speed
+    autoplaySpeed: 0,
     cssEase: "linear",
   };
   useEffect(() => {
