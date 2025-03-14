@@ -9,7 +9,7 @@ const IASGallery = () => {
       const [IAScategories, setIASCategories] = useState([]);
       const [currentPage, setCurrentPage] = useState(1);
           const [selectedCategory, setSelectedCategory] = useState("All");
-          const itemsPerPage = 4;
+          const itemsPerPage = 8;
 
           const filteredItems =
             selectedCategory === "All"
