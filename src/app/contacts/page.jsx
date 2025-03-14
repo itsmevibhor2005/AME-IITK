@@ -119,7 +119,7 @@ const ContactPage = () => {
       </section>
       </>
        ) : (
-        <Image
+        <img
                 src="/ame/Gears.gif"
                 alt="Logo"
                 width={400}

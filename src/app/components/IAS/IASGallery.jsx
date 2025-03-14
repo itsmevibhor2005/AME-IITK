@@ -130,7 +130,7 @@ const IASGallery = () => {
         >
           Prev
         </InteractiveHoverButtonLeft>
-        <Typography className="mx-4 text-gray-700">
+        <Typography className="lg:mx-4 mx-1 text-gray-700">
           Page {currentPage} of {totalPages}
         </Typography>
         <InteractiveHoverButtonRight

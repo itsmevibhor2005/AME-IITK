@@ -20,7 +20,7 @@ const Organisers = () => {
   return (
     <>
       <motion.h1
-        className="lg:text-5xl sm:text-3xl text-xl text-center font-bold text-purple-700 m-10 underline"
+        className="lg:text-5xl sm:text-3xl text-2xl text-center font-bold text-purple-700 m-10 underline"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -35,7 +35,7 @@ const Organisers = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
       >
-        <section className="mb-10">
+        <section className="mb-10 flex justify-center">
           <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-6">
             {renderMembers(organisers)}
           </div>
@@ -51,7 +51,7 @@ const renderMembers = (membersArray) => {
     return membersArray.map((member, index) => (
       <motion.div
         key={index}
-        className="relative group flex flex-col items-center justify-center text-center p-6 shadow-lg rounded-lg bg-white xl:w-64 w-60 h-80 transition-transform duration-300 cursor-pointer overflow-hidden"
+        className="relative group flex flex-col items-center justify-center text-center p-6 shadow-lg rounded-lg bg-white xl:w-64 w-60 lg:h-80 sm:h-72 h-64 transition-transform duration-300 cursor-pointer overflow-hidden"
         initial={{ scale: 1 }}
         whileHover={{
           scale: 1.1, // Increase the height of the card
@@ -68,10 +68,10 @@ const renderMembers = (membersArray) => {
           <img
             src={member.image}
             alt={member.name}
-            className="w-40 h-40 rounded-full mb-4 object-cover"
+            className="lg:w-40 lg:h-40 sm:w-32 sm:h-32 h-28 w-28 rounded-full mb-4 object-cover"
           />
-          <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-          <h2 className="text-lg font-semibold">{member.designation}</h2>
+          <h3 className="lg:text-xl sm:text-lg text-base font-bold mb-2">{member.name}</h3>
+          <h2 className="lg:text-lg text-base font-semibold">{member.designation}</h2>
           {/* <p className="text-sm text-gray-600">{member.description}</p> */}
         </div>
 

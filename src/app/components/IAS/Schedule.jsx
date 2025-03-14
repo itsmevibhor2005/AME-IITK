@@ -31,7 +31,7 @@ const Schedule = () => {
       </motion.h1>
       <div className="flex justify-center items-center w-[100vw]">
         <motion.div
-          className="grid grid-cols-2 text-left text-lg w-[70vw]"
+          className="grid grid-cols-2 text-left sm:w-[70vw] w-[90vw]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -39,10 +39,10 @@ const Schedule = () => {
         >
           {schedule.map((item, index) => (
             <React.Fragment key={index}>
-              <div className="font-semibold bg-purple-500 text-xl p-5 w-[35vw] border-b-2 text-gray-800">
+              <div className="font-semibold bg-purple-500 lg:text-xl sm:text-lg text-base p-5 sm:w-[35vw] w-[45vw] border-b-2 text-gray-800">
                 {item.event}
               </div>
-              <div className="text-gray-600 w-[35vw] border-b-2 p-5 bg-purple-300">
+              <div className="text-gray-600 sm:w-[35vw] w-[45vw] lg:text-xl sm:text-lg text-base border-b-2 p-5 bg-purple-300">
                 {item.date}
               </div>
             </React.Fragment>

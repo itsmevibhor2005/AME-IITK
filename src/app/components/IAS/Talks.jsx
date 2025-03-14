@@ -34,8 +34,8 @@ const Talks = () => {
       >
         {talks.map((talk, index) => (
           <div key={index}>
-            <div key={index} className="w-full text-center mb-5">
-              <h2 className="text-4xl font-bold">{talk.title}</h2>
+            <div key={index} className="w-full text-center lg:mb-5 sm:mb-3 mb-2">
+              <h2 className="lg:text-4xl sm:text-2xl text-xl font-bold">{talk.title}</h2>
             </div>
             <motion.div
               className={`flex flex-col sm:flex-row items-center my-10 p-5 rounded-xl shadow-lg bg-white ${
@@ -50,13 +50,13 @@ const Talks = () => {
                 <img
                   src={talk.image}
                   alt={talk.speaker}
-                  className="w-[250px] h-[250px] object-cover border-4 border-purple-500"
+                  className="lg:w-[250px] lg:h-[250px] sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] object-cover border-4 border-purple-500"
                 />
               </div>
               <div className="sm:w-2/3 text-left p-5">
-                <p className="text-3xl font-bold mt-3">{talk.speaker}</p>
+                <p className="lg:text-3xl sm:text-2xl text-xl font-bold mt-3">{talk.speaker}</p>
                 <p
-                  className="text-gray-700 mt-2 "
+                  className="text-gray-700 mt-2 sm:text-lg lg:text-xl text-base"
                   dangerouslySetInnerHTML={{
                     __html: talk.description.replace(
                       /\*\*(.*?)\*\*/g,

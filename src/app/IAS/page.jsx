@@ -78,7 +78,7 @@ export default function IndustryAcademiaSymposium() {
     <div className="flex flex-col items-center justify-center  p-6">
       {/* Heading */}
       <motion.div
-        className="flex justify-center h-[150px] items-center"
+        className="flex justify-center lg:h-[150px] sm:h-[120px] h-[100px] items-center"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -87,7 +87,7 @@ export default function IndustryAcademiaSymposium() {
         <img
           src="/ame/images/iitk_logo.png"
           alt="#logo"
-          className="w-[150px]"
+          className="lg:w-[150px] sm:w-[100px] w-[80px]"
         />
         <span className="lg:text-6xl sm:text-4xl text-2xl text-center font-bold text-purple-700">
           Industry Academia Symposium - 2025
@@ -95,7 +95,7 @@ export default function IndustryAcademiaSymposium() {
         <img
           src="/ame/images/IAS-2025/IAS_logo.png"
           alt="#logo"
-          className="w-[150px]"
+          className="lg:w-[150px] sm:w-[100px] w-[80px]"
         />
       </motion.div>
       <motion.p
@@ -106,8 +106,13 @@ export default function IndustryAcademiaSymposium() {
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
       >
         <div className="my-3">
-          <span className="font-bold text-4xl">Date : </span>
-          <span className="text-4xl"> 22nd - 23rd March 2025</span>
+          <span className="font-bold lg:text-4xl sm:text-2xl text-lg">
+            Date :{" "}
+          </span>
+          <span className="lg:text-4xl sm:text-2xl text-lg">
+            {" "}
+            22nd - 23rd March 2025
+          </span>
         </div>
 
         <div className="text-gray-800 my-3">
@@ -117,14 +122,14 @@ export default function IndustryAcademiaSymposium() {
       </motion.p>
 
       {/* Participating Industries  */}
-      <ParticipatingIndustries/>
+      <ParticipatingIndustries />
 
       {/* Participating Institutes  */}
-      <ParticipatingInstitutes/>
+      <ParticipatingInstitutes />
 
       {/* About IAS  */}
       <motion.h1
-        className="lg:text-6xl sm:text-4xl text-2xl m-10 text-center font-bold text-purple-700"
+        className="lg:text-6xl sm:text-4xl text-2xl lg:m-10 sm:m-7 m-5 text-center font-bold text-purple-700"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -171,7 +176,7 @@ export default function IndustryAcademiaSymposium() {
 
       {/* ME Dept */}
       <motion.h1
-        className="lg:text-6xl sm:text-4xl text-2xl m-10 text-center font-bold text-purple-700"
+        className="lg:text-6xl sm:text-4xl text-2xl lg:m-10 sm:m-7 m-5 text-center font-bold text-purple-700"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -230,19 +235,19 @@ export default function IndustryAcademiaSymposium() {
       </motion.div>
 
       {/* Talks  */}
-      <Talks/>
+      <Talks />
 
       {/* Schedule */}
-      <Schedule/>
+      <Schedule />
 
       {/* IAS Gallery  */}
-      <IASGallery/>
+      <IASGallery />
 
       {/* Sponsors */}
-      <Sponsors/>
+      <Sponsors />
 
       {/* Organisers  */}
-      <Organisers/>
+      <Organisers />
 
       {/* Previous RSD  */}
       <motion.h1
