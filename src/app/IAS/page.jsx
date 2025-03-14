@@ -7,33 +7,41 @@ import { Card, CardMedia, Typography } from "@mui/material";
 import { InteractiveHoverButtonLeft } from "@/components/ui/interactive-hover-button-left";
 import { InteractiveHoverButtonRight } from "@/components/ui/interactive-hover-button-next";
 
+import IASGallery from "../components/IAS/IASGallery";
+import Talks from "../components/IAS/Talks";
+import ParticipatingIndustries from "../components/IAS/ParticipatingIndustries";
+import ParticipatingInstitutes from "../components/IAS/ParticipatingInstitutes";
+import Schedule from "../components/IAS/Schedule";
+import Organisers from "../components/IAS/Organisers";
+import Sponsors from "../components/IAS/Sponsors";
+
 export default function IndustryAcademiaSymposium() {
-  const [categories, setCategories] = useState([]);
-  const [galleryItems, setGalleryItems] = useState([]);
+  const [prevcategories, setprevCategories] = useState([]);
+  const [prevgalleryItems, setprevGalleryItems] = useState([]);
   
   useEffect(() => {
-      const fetchGalleryItems = async () => {
+      const fetchprevGalleryItems = async () => {
         try {
-          const res = await fetch("/data/RSD/rsd.json");
+          const res = await fetch("/ame/data/RSD/rsd.json");
           const data = await res.json();
-          setGalleryItems(data.images);
+          setprevGalleryItems(data.images);
         } catch (err) {
           console.error("Error fetching gallery data:", err);
         }
       };
-  
-        const fetchCategories = async () => {
+                  
+        const fetchprevCategories = async () => {
           try {
-            const res = await fetch("/data/RSD/rsd-category.json");
+            const res = await fetch("/ame/data/RSD/rsd-category.json");
             const data = await res.json();
-            setCategories(data.category);
+            setprevCategories(data.category);
           } catch (err) {
             console.error("Error fetching categories data:", err);
           }
         };
-  
-        fetchGalleryItems();
-        fetchCategories();
+        
+        fetchprevGalleryItems();
+        fetchprevCategories();
     }, []);
     // Pagination and filtering state
     const [currentPage, setCurrentPage] = useState(1);
@@ -43,8 +51,8 @@ export default function IndustryAcademiaSymposium() {
     // Filter items based on the selected category
     const filteredItems =
       selectedCategory === "All"
-        ? galleryItems
-        : galleryItems.filter((item) => item.category === selectedCategory);
+        ? prevgalleryItems
+        : prevgalleryItems.filter((item) => item.category === selectedCategory);
   
     // Calculate the indices for pagination
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -68,21 +76,114 @@ export default function IndustryAcademiaSymposium() {
   
   return (
     <div className="flex flex-col items-center justify-center  p-6">
-      {/* Animated Heading */}
-      <motion.h1
-        className="lg:text-6xl sm:text-4xl text-2xl text-center font-bold text-purple-700 mb-10"
+      {/* Heading */}
+      <motion.div
+        className="flex justify-center h-[150px] items-center"
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
-        Industry Academia Symposium
-      </motion.h1>
+        <img
+          src="/ame/images/iitk_logo.png"
+          alt="#logo"
+          className="w-[150px]"
+        />
+        <span className="lg:text-6xl sm:text-4xl text-2xl text-center font-bold text-purple-700">
+          Industry Academia Symposium - 2025
+        </span>
+        <img
+          src="/ame/images/IAS-2025/IAS_logo.png"
+          alt="#logo"
+          className="w-[150px]"
+        />
+      </motion.div>
+      <motion.p
+        className="lg:text-4xl sm:text-2xl text-xl text-black max-w-4xl text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+      >
+        <div className="my-3">
+          <span className="font-bold text-4xl">Date : </span>
+          <span className="text-4xl"> 22nd - 23rd March 2025</span>
+        </div>
 
-      {/* Animated Description */}
+        <div className="text-gray-800 my-3">
+          Department of Mechanical Engineering
+        </div>
+        <div className="my-3">IIT Kanpur</div>
+      </motion.p>
+
+      {/* Participating Industries  */}
+      <ParticipatingIndustries/>
+
+      {/* Participating Institutes  */}
+      <ParticipatingInstitutes/>
+
+      {/* About IAS  */}
+      <motion.h1
+        className="lg:text-6xl sm:text-4xl text-2xl m-10 text-center font-bold text-purple-700"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        About IAS
+      </motion.h1>
       <motion.p
         className="lg:text-2xl sm:text-xl text-lg text-black max-w-4xl text-center"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <span className="font-bold">Industry Academia Symposium (IAS)</span>,
+        the flagship event by AME under the Department of Mechanical
+        Engineering, showcases the innovative spirit of both academia and
+        industry. Featuring oral presentation sessions by{" "}
+        <span className="font-bold">senior PhD students</span> of Mechanical
+        Engineering department (<span className="font-bold">either 4years</span>{" "}
+        or <span className="font-bold">above</span> or{" "}
+        <span className="font-bold">
+          PG students having at least one publication
+        </span>
+        ), esteemed faculties, and industry representatives, it fosters research
+        awareness and ignites collaboration between academia and industry
+        towards advances in Mechanical Engineering.
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <a
+          href="https://docs.google.com/forms/d/19ED1SCF0-4UhSxI41kieKALknEQ1JeQg6rhgqy68XiU/edit"
+          target="_blank"
+        >
+          <RainbowButton className="mt-10 lg:w-[200px] sm:w-[175px] w-[150px] mb-10 lg:h-[50px] sm:h-[45px] h-[40px] lg:text-xl sm:text-lg text-sm">
+            Register Now
+          </RainbowButton>
+        </a>
+      </motion.div>
+
+      {/* ME Dept */}
+      <motion.h1
+        className="lg:text-6xl sm:text-4xl text-2xl m-10 text-center font-bold text-purple-700"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        About ME Department, IIT Kanpur
+      </motion.h1>
+      <motion.p
+        className="lg:text-2xl sm:text-xl text-lg text-black max-w-4xl text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
       >
         <span className="font-bold">Industry Academia Symposium (IAS)</span>,
@@ -100,32 +201,61 @@ export default function IndustryAcademiaSymposium() {
         towards advances in Mechanical Engineering.
       </motion.p>
 
+      {/* Submissions  */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-      ><a
-            href="https://docs.google.com/forms/d/19ED1SCF0-4UhSxI41kieKALknEQ1JeQg6rhgqy68XiU/edit"
-            target="_blank"
-          >
-        <RainbowButton className="mt-10 lg:w-[200px] sm:w-[175px] w-[150px] mb-10 lg:h-[50px] sm:h-[45px] h-[40px] lg:text-xl sm:text-lg text-sm">
-          
-            Register Now
-          
-        </RainbowButton>
+        viewport={{ once: true }}
+      >
+        <a href="#" target="_blank">
+          <RainbowButton className="mt-10 lg:w-[500px] sm:w-[175px] w-[150px] mb-5 lg:h-[60px] sm:h-[55px] h-[50px] lg:text-xl sm:text-lg text-sm">
+            Submissions
+          </RainbowButton>
         </a>
       </motion.div>
 
+      {/* Key Events  */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <a href="#" target="_blank">
+          <RainbowButton className="mt-5 lg:w-[500px] sm:w-[175px] w-[150px] mb-5 lg:h-[60px] sm:h-[55px] h-[50px] lg:text-xl sm:text-lg text-sm">
+            Key Events
+          </RainbowButton>
+        </a>
+      </motion.div>
+
+      {/* Talks  */}
+      <Talks/>
+
+      {/* Schedule */}
+      <Schedule/>
+
+      {/* IAS Gallery  */}
+      <IASGallery/>
+
+      {/* Sponsors */}
+      <Sponsors/>
+
+      {/* Organisers  */}
+      <Organisers/>
+
+      {/* Previous RSD  */}
       <motion.h1
         className="lg:text-5xl sm:text-3xl text-xl text-center font-bold text-purple-700 mb-10 underline"
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Previous RSDs
       </motion.h1>
       <div className="flex flex-wrap gap-4 justify-center space-x-4 mb-4">
-        {categories.map((category) => (
+        {prevcategories.map((category) => (
           <button
             key={category}
             className={`px-4 py-2 rounded-lg text-white lg:text-base sm:text-sm te font-semibold transition-all ${
@@ -143,7 +273,7 @@ export default function IndustryAcademiaSymposium() {
         <div className="absolute w-full h-1 bg-purple-700 mb-5 opacity-50 top-1/2 transform -translate-y-1/2 animate-expand-line"></div>
       </div>
       {/* Gallery grid */}
-      {galleryItems.length ? (
+      {prevgalleryItems.length ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {currentItems.map((item) => (
@@ -188,63 +318,6 @@ export default function IndustryAcademiaSymposium() {
           Next
         </InteractiveHoverButtonRight>
       </div>
-      {/* <div className="text-center relative my-6 min-h-[100vh]">
-            
-           
-      
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-[3rem] md:gap-[5rem] items-center justify-center">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="mx-auto"
-              >
-                <InstagramEmbedCustom url="https://www.instagram.com/p/DD-Xn5TzkkC/" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="mx-auto"
-              >
-                <InstagramEmbedCustom url="https://www.instagram.com/p/C-vSuAoONik/" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="mx-auto"
-              >
-                <InstagramEmbedCustom url="https://www.instagram.com/p/C-aZLMBogSZ/" />
-              </motion.div>
-            </div>
-          </div> */}
     </div>
   );
 }
-
-const InstagramEmbedCustom = ({ url }) => {
-  if (!url) {
-    return (
-      <div className="text-center text-red-500 font-medium">
-        Please provide a valid Instagram post URL.
-      </div>
-    );
-  }
-
-  return (
-    <div className="w-full max-w-[60vw] sm:min-h-[90vh] min-h-[50vh] mx-auto border scroll-smooth rounded-lg overflow-hidden shadow-md">
-      <iframe
-        src={`${url}embed`}
-        width="100%"
-        height="500"
-        scrolling="no"
-        frameBorder="0"
-        allowTransparency="true"
-        allow="encrypted-media"
-        className="w-full sm:min-h-[90vh] min-h-[50vh] overflow-y-hidden"
-        title="Instagram Post"
-      ></iframe>
-    </div>
-  );
-};
-

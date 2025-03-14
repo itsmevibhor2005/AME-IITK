@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Navbar from "./Home/Navbar";
 import Link from "next/link";
 
@@ -11,8 +11,8 @@ const Header = () => {
       {/* Logo */}
       <div className="flex items-center">
         <Link href="/">
-        <Image
-          src="/logo.png"
+        <img
+          src="/ame/logo.png"
           alt="logo"
           width={100}
           height={160}

@@ -1,7 +1,7 @@
 "use client";
 
 
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
@@ -12,7 +12,7 @@ export default function Activities() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/Activities/activities.json");
+        const res = await fetch("/ame/data/Activities/activities.json");
         const data = await res.json();
         setInitialData(data);
       } catch (err) {
@@ -60,7 +60,7 @@ export default function Activities() {
         </>
       ) : (
         <div className="flex justify-center items-center h-full">
-          <Image
+          <img
             src="/Gears.gif"
             alt="Logo"
             width={400}
@@ -81,8 +81,9 @@ const DummyContent = ({ paragraph, images }) => {
       </p>
       <div className="flex flex-wrap justify-center gap-4 mt-6">
         {images.map((image, index) => (
-          <Image
+          <img
             key={`dummy-content-image-${index}`}
+          
             src={image.src}
             alt={image.alt}
             height={500}

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 // import FuturisticRobotLoader from "./components/Home/Robot";
@@ -17,8 +17,8 @@ export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <Image
-        src="/Gears.gif"
+      <img
+        src="/ame/Gears.gif"
         alt="Logo"
         width={400}
         height={400}

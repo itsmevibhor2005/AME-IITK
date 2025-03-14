@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -22,7 +22,7 @@ const Hero = () => {
           {isGifVisible && (
             <div className="flex flex-col items-center justify-center">
               <motion.img
-                src="../../../../page-loader.gif"
+                src="../../../../ame/page-loader.gif"
                 alt="#page_loader"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}

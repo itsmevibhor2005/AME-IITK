@@ -1,0 +1,107 @@
+{
+  "members": [
+    {
+      "title": "Faculty Advisor",
+      "name": "Dr. Abhishek Sarkar",
+      "image": "/images/contacts/abhishek-sarkar.jpg",
+      "email": "abhisheks@iitk.ac.in"
+    },
+    {
+      "title": "President",
+      "name": "Ranamay Saha",
+      "image": "/images/contacts/ranamay.jpg",
+      "email": "ranamays21@iitk.ac.in"
+    },
+    {
+      "title": "Vice President",
+      "name": "Ujjawal Agarwal",
+      "image": "/images/contacts/Ujjawal-Agarwal.jpg",
+      "email": "aujjawal22@iitk.ac.in"
+    },
+    {
+      "title": "Coordinators",
+      "members": [
+        {
+          "name": "Shruti",
+          "image": "/images/contacts/Shruti.jpg",
+          "email": "shruti22@iitk.ac.in"
+        },
+        {
+          "name": "Pranab Kumar Nanda",
+          "image": "/images/contacts/Pranab-Kumar-Nanda.png",
+          "email": "pranabkn22@iitk.ac.in"
+        },
+        {
+          "name": "Ayush Baghel",
+          "image": "/images/contacts/Ayush-Baghel.jpg",
+          "email": "ayushba22@iitk.ac.in"
+        },
+        {
+          "name": "Moloy Sarkar",
+          "image": "/images/contacts/Moloy-Sarkar.jpg",
+          "email": "moloys21@iitk.ac.in"
+        }
+      ]
+    },
+    {
+      "title": "Secretaries",
+      "members": [
+        {
+          "name": "Vibhor Srivastava",
+          "image": "/images/contacts/vibhor-srivastava.jpg",
+          "email": "svibhor23@iitk.ac.in"
+        },
+        {
+          "name": "Harisen",
+          "image": "/images/contacts/Hari-Sen.jpg",
+          "email": "harisen23@iitk.ac.in"
+        },
+        {
+          "name": "Jayanth Matam",
+          "image": "/images/contacts/Jayanth-Matam.jpg",
+          "email": "jayanthm23@iitk.ac.in"
+        },{
+          "name": "Prajapati Pradyum Girish Chandra",
+          "image": "/images/contacts/Pradyum-prajapati.jpg",
+          "email": "pradyumgir23@iitk.ac.in"
+        },{
+          "name": "Viswa Prasad S V",
+          "image": "/images/contacts/Viswa-Prasad.jpg",
+          "email": "viswap24@iitk.ac.in"
+        },{
+          "name": "Mohit Yadav",
+          "image": "/images/contacts/mohit-yadav.jpg",
+          "email": "mohityadav23@iitk.ac.in"
+        },
+        {
+          "name": "Pragya Akhare",
+          "image": "/images/contacts/Pragya-Akhare.jpg",
+          "email": "pragyapakhare6@gmail.com"
+        },{
+          "name": "Abhiveer Kumar",
+          "image": "/images/contacts/ABHIVEER-KUMAR.jpg",
+          "email": "abhiveer23@iitk.ac.in"
+        },{
+          "name": "Yajat Parikh",
+          "image": "/images/contacts/Yajat-Parikh.jpg",
+          "email": "pyajat23@iitk.ac.in"
+        },
+        {
+          "name": "Samiera R Nair",
+          "image": "/images/contacts/Samiera-R-Nair.jpg",
+          "email": "samierar23@iitk.ac.in"
+        },
+        {
+          "name": "Rohan Kumar",
+          "image": "/images/contacts/Rohan-Kumar.jpg",
+          "email": "rohanp23@iitk.ac.in"
+        }
+        
+        
+        
+
+
+      ]
+    }
+  ]
+}

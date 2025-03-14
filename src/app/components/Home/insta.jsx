@@ -8,7 +8,7 @@ const museo = MuseoModerno({ subsets: ["latin"], weight: ["400"] });
 const InstagramSection = () => {
   const [insta, setInsta] = useState([]);
   useEffect(() =>{
-    fetch("/data/Insta/instaLinks.json")
+    fetch("/ame/data/Insta/instaLinks.json")
       .then((res) => res.json())
       .then((data) => setInsta(data.instagramLinks))
       .catch((err) => console.error("Error fetching Instagram data:", err));

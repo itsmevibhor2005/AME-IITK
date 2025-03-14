@@ -1,0 +1,30 @@
+[
+  {
+    "event": "Inauguration Ceremony",
+    "date": "22nd March 2025, 9:00 AM"
+  },
+  {
+    "event": "Keynote Speech by Dr. John Doe",
+    "date": "22nd March 2025, 10:00 AM"
+  },
+  {
+    "event": "Panel Discussion: Future of Mechanical Engineering",
+    "date": "22nd March 2025, 11:30 AM"
+  },
+  {
+    "event": "Lunch Break",
+    "date": "22nd March 2025, 1:00 PM"
+  },
+  {
+    "event": "Technical Session 1: Advanced Manufacturing",
+    "date": "22nd March 2025, 2:00 PM"
+  },
+  {
+    "event": "Technical Session 2: Robotics and Automation",
+    "date": "22nd March 2025, 4:00 PM"
+  },
+  {
+    "event": "Networking Dinner",
+    "date": "22nd March 2025, 7:00 PM"
+  }
+]

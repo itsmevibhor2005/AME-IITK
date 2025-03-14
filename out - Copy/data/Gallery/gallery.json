@@ -1,0 +1,508 @@
+{
+    "images": [
+        {
+            "id": 2,
+            "title": "image 1",
+            "image": "/images/gallery/Aarambh_24/01.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 3,
+            "title": "image 2",
+            "image": "/images/gallery/Aarambh_24/02.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 4,
+            "title": "image 3",
+            "image": "/images/gallery/Aarambh_24/03.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 5,
+            "title": "image 4",
+            "image": "/images/gallery/Aarambh_24/04.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 6,
+            "title": "image 5",
+            "image": "/images/gallery/Aarambh_24/05.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 7,
+            "title": "image 6",
+            "image": "/images/gallery/Aarambh_24/06.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 8,
+            "title": "image 7",
+            "image": "/images/gallery/Aarambh_24/07.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 9,
+            "title": "image 8",
+            "image": "/images/gallery/Aarambh_24/08.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 10,
+            "title": "image 9",
+            "image": "/images/gallery/Aarambh_24/09.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 11,
+            "title": "image 10",
+            "image": "/images/gallery/Aarambh_24/10.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 12,
+            "title": "image 11",
+            "image": "/images/gallery/Aarambh_24/11.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 13,
+            "title": "image 12",
+            "image": "/images/gallery/Aarambh_24/12.jpg",
+            "category": "Aarambh' 24"
+        },
+        {
+            "id": 14,
+            "title": "image 13",
+            "image": "/images/gallery/Aarambh_24/Screenshot 2025-02-18 020800.png",
+            "category": "Aarambh' 24"
+        },
+        
+        {
+            "id": 15,
+            "title": "image 1",
+            "image": "/images/gallery/A_K_Mallik/01.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 16,
+            "title": "image 2",
+            "image": "/images/gallery/A_K_Mallik/02.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 17,
+            "title": "image 3",
+            "image": "/images/gallery/A_K_Mallik/03.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 18,
+            "title": "image 4",
+            "image": "/images/gallery/A_K_Mallik/04.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 19,
+            "title": "image 5",
+            "image": "/images/gallery/A_K_Mallik/05.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 20,
+            "title": "image 6",
+            "image": "/images/gallery/A_K_Mallik/06.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 21,
+            "title": "image 7",
+            "image": "/images/gallery/A_K_Mallik/07.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 22,
+            "title": "image 8",
+            "image": "/images/gallery/A_K_Mallik/08.jpg",
+            "category": "A K Mallik"
+        },
+        {
+            "id": 23,
+            "title": "image 9",
+            "image": "/images/gallery/A_K_Mallik/Screenshot 2025-02-18 020538.png",
+            "category": "A K Mallik"
+        },
+        
+        {
+            "id": 24,
+            "title": "image 1",
+            "image": "/images/gallery/Ansys/ansys_1.jpeg",
+            "category": "Ansys"
+        },
+        {
+            "id": 25,
+            "title": "image 2",
+            "image": "/images/gallery/Ansys/ansys_2.jpeg",
+            "category": "Ansys"
+        },
+        {
+            "id": 26,
+            "title": "image 3",
+            "image": "/images/gallery/Ansys/ansys_3.jpeg",
+            "category": "Ansys"
+        },
+        {
+            "id": 27,
+            "title": "image 4",
+            "image": "/images/gallery/Ansys/ansys_4.jpeg",
+            "category": "Ansys"
+        },
+        {
+            "id": 28,
+            "title": "image 5",
+            "image": "/images/gallery/Ansys/ansys_5.jpeg",
+            "category": "Ansys"
+        },
+        {
+            "id": 29,
+            "title": "image 6",
+            "image": "/images/gallery/Ansys/ansys_poster.jpeg",
+            "category": "Ansys"
+        },
+        
+        {
+            "id": 30,
+            "title": "image 1",
+            "image": "/images/gallery/Labview_Workshop/lab1.jpeg",
+            "category": "Labview Workshop"
+        },
+        {
+            "id": 31,
+            "title": "image 2",
+            "image": "/images/gallery/Labview_Workshop/lab2.jpeg",
+            "category": "Labview Workshop"
+        },
+        {
+            "id": 32,
+            "title": "image 3",
+            "image": "/images/gallery/Labview_Workshop/lab3.jpeg",
+            "category": "Labview Workshop"
+        },
+        
+        {
+            "id": 33,
+            "title": "image 1",
+            "image": "/images/gallery/Matlab/01.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 34,
+            "title": "image 2",
+            "image": "/images/gallery/Matlab/02.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 35,
+            "title": "image 3",
+            "image": "/images/gallery/Matlab/03.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 36,
+            "title": "image 4",
+            "image": "/images/gallery/Matlab/04.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 37,
+            "title": "image 5",
+            "image": "/images/gallery/Matlab/05.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 38,
+            "title": "image 6",
+            "image": "/images/gallery/Matlab/06.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 39,
+            "title": "image 7",
+            "image": "/images/gallery/Matlab/07.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 40,
+            "title": "image 8",
+            "image": "/images/gallery/Matlab/08.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 41,
+            "title": "image 9",
+            "image": "/images/gallery/Matlab/09.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 42,
+            "title": "image 10",
+            "image": "/images/gallery/Matlab/10.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 43,
+            "title": "image 11",
+            "image": "/images/gallery/Matlab/11.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 44,
+            "title": "image 12",
+            "image": "/images/gallery/Matlab/12.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 45,
+            "title": "image 13",
+            "image": "/images/gallery/Matlab/13.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 46,
+            "title": "image 14",
+            "image": "/images/gallery/Matlab/14.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 47,
+            "title": "image 15",
+            "image": "/images/gallery/Matlab/15.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 48,
+            "title": "image 16",
+            "image": "/images/gallery/Matlab/16.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 49,
+            "title": "image 17",
+            "image": "/images/gallery/Matlab/17.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 50,
+            "title": "image 18",
+            "image": "/images/gallery/Matlab/18.jpg",
+            "category": "Matlab"
+        },
+        {
+            "id": 51,
+            "title": "image 19",
+            "image": "/images/gallery/Matlab/Screenshot 2025-02-18 020501.png",
+            "category": "Matlab"
+        },
+        {
+            "id": 52,
+            "title": "image 20",
+            "image": "/images/gallery/Matlab/mat2.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 53,
+            "title": "image 21",
+            "image": "/images/gallery/Matlab/mat3.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 54,
+            "title": "image 22",
+            "image": "/images/gallery/Matlab/mat_1.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 55,
+            "title": "image 23",
+            "image": "/images/gallery/Matlab/mat_10.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 56,
+            "title": "image 24",
+            "image": "/images/gallery/Matlab/mat_11.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 57,
+            "title": "image 25",
+            "image": "/images/gallery/Matlab/mat_2.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 58,
+            "title": "image 26",
+            "image": "/images/gallery/Matlab/mat_3.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 59,
+            "title": "image 27",
+            "image": "/images/gallery/Matlab/mat_4.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 60,
+            "title": "image 28",
+            "image": "/images/gallery/Matlab/mat_5.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 61,
+            "title": "image 29",
+            "image": "/images/gallery/Matlab/mat_6.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 62,
+            "title": "image 30",
+            "image": "/images/gallery/Matlab/mat_7.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 63,
+            "title": "image 31",
+            "image": "/images/gallery/Matlab/mat_8.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 64,
+            "title": "image 32",
+            "image": "/images/gallery/Matlab/mat_9.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 65,
+            "title": "image 33",
+            "image": "/images/gallery/Matlab/matlab_poster.jpeg",
+            "category": "Matlab"
+        },
+        {
+            "id": 66,
+            "title": "image 1",
+            "image": "/images/gallery/Placement_Session/ps1.jpeg",
+            "category": "Placement Session"
+        },
+        {
+            "id": 67,
+            "title": "image 2",
+            "image": "/images/gallery/Placement_Session/ps2.jpeg",
+            "category": "Placement Session"
+        },
+        
+        {
+            "id": 68,
+            "title": "image 1",
+            "image": "/images/gallery/Freshers_19/fr19_1.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 69,
+            "title": "image 2",
+            "image": "/images/gallery/Freshers_19/fr19_2.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 70,
+            "title": "image 3",
+            "image": "/images/gallery/Freshers_19/fr19_3.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 71,
+            "title": "image 4",
+            "image": "/images/gallery/Freshers_19/fr19_4.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 72,
+            "title": "image 5",
+            "image": "/images/gallery/Freshers_19/fr19_5.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 73,
+            "title": "image 6",
+            "image": "/images/gallery/Freshers_19/fr19_6.jpeg",
+            "category": "Freshers' 19"
+        },
+        {
+            "id": 74,
+            "title": "image 7",
+            "image": "/images/gallery/Freshers_19/fr19_7.jpeg",
+            "category": "Freshers' 19"
+        },
+        
+        {
+            "id": 75,
+            "title": "image 1",
+            "image": "/images/gallery/Memories/1.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 76,
+            "title": "image 2",
+            "image": "/images/gallery/Memories/2.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 77,
+            "title": "image 3",
+            "image": "/images/gallery/Memories/3.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 78,
+            "title": "image 4",
+            "image": "/images/gallery/Memories/4.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 79,
+            "title": "image 5",
+            "image": "/images/gallery/Memories/5.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 80,
+            "title": "image 6",
+            "image": "/images/gallery/Memories/6.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 81,
+            "title": "image 7",
+            "image": "/images/gallery/Memories/7.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 82,
+            "title": "image 8",
+            "image": "/images/gallery/Memories/8.jpg",
+            "category": "Memories"
+        },
+        {
+            "id": 83,
+            "title": "image 9",
+            "image": "/images/gallery/Memories/9.jpg",
+            "category": "Memories"
+        }
+    
+    
+    
+    
+    
+    
+    ]
+}

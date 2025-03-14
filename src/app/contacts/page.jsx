@@ -9,7 +9,7 @@ const ContactPage = () => {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch("/data/Contacts/contacts.json")
+    fetch("/ame/data/Contacts/contacts.json")
       .then((res) => res.json())
       .then((data) => {
         // console.log("Fetched members:", data.members); // Log fetched data
@@ -60,10 +60,7 @@ const ContactPage = () => {
               {member.email}
             </a>
           </p>
-          {/* <p>
-            <span className="text-purple-400">Phone: </span>
-            {member.phone}
-          </p> */}
+          
         </motion.div>
         <div className="absolute inset-0 group-hover:h-[400px] transition-all duration-300"></div>
       </motion.div>
@@ -111,7 +108,7 @@ const ContactPage = () => {
           {renderMembers(members[3].members)}
         </div>
       </section>
-      {/* Coordinators */}
+      {/* Secretaries */}
       <section className="mb-10">
         <h2 className="lg:text-4xl text-2xl sm:text-3xl text-purple-500 font-bold text-center mb-6">
           {members[4].title}
@@ -123,7 +120,7 @@ const ContactPage = () => {
       </>
        ) : (
         <Image
-                src="/Gears.gif"
+                src="/ame/Gears.gif"
                 alt="Logo"
                 width={400}
                 height={400}

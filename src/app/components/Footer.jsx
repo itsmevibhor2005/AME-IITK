@@ -253,13 +253,13 @@ const Footer = () => {
 
 const Icons = {
   facebook: (props) => (
-    <img src="/images/socials/facebook.svg" alt="Facebook" {...props} />
+    <img src="/ame/images/socials/facebook.svg" alt="Facebook" {...props} />
   ),
   linkedin: (props) => (
-    <img src="/images/socials/linkedin.svg" alt="LinkedIn" {...props} />
+    <img src="/ame/images/socials/linkedin.svg" alt="LinkedIn" {...props} />
   ),
   instagram: (props) => (
-    <img src="/images/socials/instagram.svg" alt="Instagram" {...props} />
+    <img src="/ame/images/socials/instagram.svg" alt="Instagram" {...props} />
   ),
 };
 

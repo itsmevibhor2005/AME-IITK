@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Talk 1",
+        "speaker": "Speaker 1",
+        
+        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+    },
+    {
+        "title": "Talk 2",
+        "speaker": "Speaker 2",
+        
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
+        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+    },
+    {
+        "title": "Talk 3",
+        "speaker": "Speaker 3",
+        
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
+        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+    },
+    {
+        "title": "Talk 4",
+        "speaker": "Speaker 4",
+        
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
+        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+    },
+    {
+        "title": "Talk 5",
+        "speaker": "Speaker 5",
+        
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
+        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+    }
+    
+]

@@ -1,7 +1,7 @@
 "use client"
 
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import Image from "next/image";
+// import Image from "next/image";
 // import Header from "./components/Home/Header";
 import Hero from "./components/Home/Hero";
 import Insta from "./components/Home/insta";

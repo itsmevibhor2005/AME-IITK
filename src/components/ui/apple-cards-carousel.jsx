@@ -13,7 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
+
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 export const CarouselContext = createContext({
@@ -269,8 +269,12 @@ export const BlurImage = ({
 }) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    (<Image
-      className={cn("transition duration-300", isLoading ? "blur-sm" : "blur-0", className)}
+    <img
+      className={cn(
+        "transition duration-300 w-full h-full object-cover",
+        isLoading ? "blur-sm" : "blur-0",
+        className
+      )}
       onLoad={() => setLoading(false)}
       src={src}
       width={width}
@@ -279,6 +283,7 @@ export const BlurImage = ({
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
-      {...rest} />)
+      {...rest}
+    />
   );
 };

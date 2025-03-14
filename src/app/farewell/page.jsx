@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Card, CardMedia, Typography } from "@mui/material";
 import { InteractiveHoverButtonLeft } from "@/components/ui/interactive-hover-button-left";
 import { InteractiveHoverButtonRight } from "@/components/ui/interactive-hover-button-next";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Farewell = () => {
   // Sample images, titles, and categories for the gallery
@@ -13,7 +13,7 @@ const Farewell = () => {
    useEffect(() => {
       const fetchGalleryItems = async () => {
         try {
-          const res = await fetch("/data/Farewell/farewell.json");
+          const res = await fetch("/ame/data/Farewell/farewell.json");
           const data = await res.json();
           setGalleryItems(data);
         } catch (err) {
@@ -23,7 +23,7 @@ const Farewell = () => {
 
       const fetchCategories = async () => {
         try {
-          const res = await fetch("/data/Farewell/farewell-category.json");
+          const res = await fetch("/ame/data/Farewell/farewell-category.json");
           const data = await res.json();
           setCategories(data.category);
         } catch (err) {
@@ -113,7 +113,7 @@ const Farewell = () => {
         </>
       ) : (
         <div className="flex justify-center items-center h-full">
-          <Image
+          <img
             src="/Gears.gif"
             alt="Logo"
             width={400}
