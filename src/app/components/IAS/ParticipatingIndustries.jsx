@@ -52,7 +52,7 @@ const ParticipatingIndustries = () => {
   return (
     <>
       {industries.length ? (
-        <div className="slider-container lg:m-7 sm:m-5 m-4 lg:h-[170px] sm:h-[120px] h-[90px] w-full">
+        <div className="slider-container lg:m-10 sm:m-7 m-6 lg:h-[170px] sm:h-[120px] h-[90px] w-full">
           <h2 className="text-center text-purple-600 font-bold lg:text-5xl sm:text-4xl text-2xl underline">
             Participating Industries
           </h2>
@@ -65,7 +65,7 @@ const ParticipatingIndustries = () => {
                 <img
                   src={industry.logo}
                   alt={industry.industry}
-                  className="max-h-full lg:w-[400px] sm:w-[350px] w-[250px] object-contain"
+                  className="max-h-full lg:w-[280px] lg:h-[230px] sm:w-[200px] sm:h-[180px] w-[150px] h-[140px] object-contain"
                 />
               </div>
             ))}

@@ -23,7 +23,7 @@ const Talks = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        Keynote Speakers
+        Industry Speakers
       </motion.h1>
       <motion.div
         className="lg:text-2xl sm:text-xl text-lg text-black w-[90vw] text-center"
@@ -34,9 +34,7 @@ const Talks = () => {
       >
         {talks.map((talk, index) => (
           <div key={index}>
-            <div key={index} className="w-full text-center lg:mb-5 sm:mb-3 mb-2">
-              <h2 className="lg:text-4xl sm:text-2xl text-xl font-bold">{talk.title}</h2>
-            </div>
+            
             <motion.div
               className={`flex flex-col sm:flex-row items-center my-10 p-5 rounded-xl shadow-lg bg-white ${
                 index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
@@ -52,9 +50,12 @@ const Talks = () => {
                   alt={talk.speaker}
                   className="lg:w-[250px] lg:h-[250px] sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] object-cover border-4 border-purple-500"
                 />
+                <p className='lg:text-2xl sm:text-xl text-lg'>{talk.speaker}</p>
+                <p className="lg:text-xl sm:text-lg text-base font-bold mt-3">
+                  {talk.designation}
+                </p>
               </div>
               <div className="sm:w-2/3 text-left p-5">
-                <p className="lg:text-3xl sm:text-2xl text-xl font-bold mt-3">{talk.speaker}</p>
                 <p
                   className="text-gray-700 mt-2 sm:text-lg lg:text-xl text-base"
                   dangerouslySetInnerHTML={{

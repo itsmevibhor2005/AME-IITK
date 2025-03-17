@@ -1,53 +1,141 @@
 [
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Dr. Ashish Dutta",
+        "designation": "Patron",
+        "image": "/ame/images/IAS-2025/organisers/ashish_dutta.jpeg"
+    },
+    {
+        "name": "Dr. Abhishek Sarkar",
+        "designation": "Convener",
+        "image": "/ame/images/IAS-2025/organisers/abhishek-sarkar.jpg"
+    },
+    {
+        "name": "Prof. Santanu De",
+        "designation": "Co-Convener",
+        "image": "/ame/images/IAS-2025/organisers/santanu_de.jpg"
     },
     {
         "name": "Ranamay Saha",
-        "designation": "President",
+        "designation": "Organiser",
         "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Pranab K Nanda",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/Pranab-Kumar-Nanda.png"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Shruti",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/Shruti.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Moloy Sarkar",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/Moloy-Sarkar.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Abhiveer Kumar",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/ABHIVEER-KUMAR.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Harisen",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/Hari-Sen.jpg"
+    },
+    
+    {
+        "name": "Vibhor Srivastava",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/vibhor-srivastava.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Mohit Yadav",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/mohit-yadav.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Pradyum Prajapati",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/Pradyum-prajapati.jpg"
+    },
+    
+    {
+        "name": "Shobhit Srivastava",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/shobhit.jpg"
     },
     {
-        "name": "Ranamay Saha",
-        "designation": "President",
-        "image": "/ame/images/IAS-2025/organisers/ranamay.jpg"
+        "name": "Rakesh Kanaujia",
+        "designation": "Organiser",
+        "image": "/ame/images/IAS-2025/organisers/rakesh.jpg"
+    },
+    {
+        "name": "Abhishek Sharma",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/abhisekh_sharma.jpg"
+    },
+    {
+        "name": "Anop Mundel",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/anop_mundel.jpg"
+    },
+    {
+        "name": "Kanik Thakur",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/kanik_thakur.jpg"
+    },
+    {
+        "name": "Mahima Bhatnagar",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/mahima_bhatnnagar.jpg"
+    },
+    {
+        "name": "Narendra",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/narendra.jpg"
+    },
+    {
+        "name": "Prabhav",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/prabhav.jpg"
+    },
+    {
+        "name": "Rahul Kumar Singh",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/rahul_kumar_singh.jpg"
+    },
+    {
+        "name": "Sanjeev Bellary",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/sanjeev_bellary.jpg"
+    },
+    {
+        "name": "Saurabh Singh Chauhan",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/saurabh_singh_chauhan.jpg"
+    },
+    {
+        "name": "Shivam Mishra",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/shivam_mishra.jpg"
+    },
+    {
+        "name": "Shivam",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/shivam.jpg"
+    },
+    {
+        "name": "Shobhit Srivastava",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/shobhit_shrivastav.jpg"
+    },
+    {
+        "name": "Suraj Kumar",
+        "designation": "Volunteer",
+        "image": "/ame/images/IAS-2025/organisers/suraj_kumar.jpg"
     }
+
 
 ]

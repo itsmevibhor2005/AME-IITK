@@ -14,10 +14,22 @@ import ParticipatingInstitutes from "../components/IAS/ParticipatingInstitutes";
 import Schedule from "../components/IAS/Schedule";
 import Organisers from "../components/IAS/Organisers";
 import Sponsors from "../components/IAS/Sponsors";
+import Faculty from "../components/IAS/Faculty";
 
 export default function IndustryAcademiaSymposium() {
   const [prevcategories, setprevCategories] = useState([]);
   const [prevgalleryItems, setprevGalleryItems] = useState([]);
+
+  const events = [
+    "RS Pandey Lecture",
+    "Oral Presentations",
+    "Talks from emininet researchers from Academia and Industry",
+    "Tech Expo, Poster Presentation and Open Sessions",
+    "Best Presentation Awards",
+    "Industry-Academia Panel Discussion",
+    "Gala Dinner"
+  ];
+
   
   useEffect(() => {
       const fetchprevGalleryItems = async () => {
@@ -78,7 +90,7 @@ export default function IndustryAcademiaSymposium() {
     <div className="flex flex-col items-center justify-center  p-6">
       {/* Heading */}
       <motion.div
-        className="flex justify-center lg:h-[150px] sm:h-[120px] h-[100px] items-center"
+        className="flex gap-2 justify-center lg:h-[150px] sm:h-[120px] h-[100px] items-center"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -87,7 +99,7 @@ export default function IndustryAcademiaSymposium() {
         <img
           src="/ame/images/iitk_logo.png"
           alt="#logo"
-          className="lg:w-[150px] sm:w-[100px] w-[80px]"
+          className="lg:w-[120px] sm:w-[80px] w-[60px]"
         />
         <span className="lg:text-6xl sm:text-4xl text-2xl text-center font-bold text-purple-700">
           Industry Academia Symposium - 2025
@@ -95,7 +107,7 @@ export default function IndustryAcademiaSymposium() {
         <img
           src="/ame/images/IAS-2025/IAS_logo.png"
           alt="#logo"
-          className="lg:w-[150px] sm:w-[100px] w-[80px]"
+          className="lg:w-[120px] sm:w-[80px] w-[60px]"
         />
       </motion.div>
       <motion.p
@@ -126,6 +138,35 @@ export default function IndustryAcademiaSymposium() {
 
       {/* Participating Institutes  */}
       <ParticipatingInstitutes />
+
+      <motion.h1
+        className="lg:text-6xl sm:text-4xl text-2xl lg:m-10 sm:m-7 m-5 text-center font-bold text-purple-700"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        About ME Department, IIT Kanpur
+      </motion.h1>
+      <motion.p
+        className="lg:text-2xl sm:text-xl text-lg text-black max-w-4xl text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+      >
+        One of the founding departments of{" "}
+        <span className="font-bold">Indian Institute of Technology Kanpur</span>
+        , the Department of Mechanical Engineering played a leading role in
+        evolving the
+        <span className="font-bold">"Engineering Science"</span> based
+        curriculum and served as a model for many engineering institutes in the
+        country. Over the years, industrial interactions and emphasis on applied
+        engineering and research has also increased manifold. The current
+        streams of study are: Solid Mechanics and Design, Fluid Mechanics and
+        Thermal Sciences, Manufacturing Science, Mechatronics, Nulcear
+        Technology.
+      </motion.p>
 
       {/* About IAS  */}
       <motion.h1
@@ -175,36 +216,6 @@ export default function IndustryAcademiaSymposium() {
       </motion.div>
 
       {/* ME Dept */}
-      <motion.h1
-        className="lg:text-6xl sm:text-4xl text-2xl lg:m-10 sm:m-7 m-5 text-center font-bold text-purple-700"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        About ME Department, IIT Kanpur
-      </motion.h1>
-      <motion.p
-        className="lg:text-2xl sm:text-xl text-lg text-black max-w-4xl text-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-      >
-        <span className="font-bold">Industry Academia Symposium (IAS)</span>,
-        the flagship event by AME under the Department of Mechanical
-        Engineering, showcases the innovative spirit of both academia and
-        industry. Featuring oral presentation sessions by{" "}
-        <span className="font-bold">senior PhD students</span> of Mechanical
-        Engineering department (<span className="font-bold">either 4years</span>{" "}
-        or <span className="font-bold">above</span> or{" "}
-        <span className="font-bold">
-          PG students having at least one publication
-        </span>
-        ), esteemed faculties, and industry representatives, it fosters research
-        awareness and ignites collaboration between academia and industry
-        towards advances in Mechanical Engineering.
-      </motion.p>
 
       {/* Submissions  */}
       <motion.div
@@ -221,21 +232,32 @@ export default function IndustryAcademiaSymposium() {
       </motion.div>
 
       {/* Key Events  */}
-      <motion.div
+      <motion.h1
+        className="lg:text-6xl sm:text-4xl text-2xl lg:m-10 sm:m-7 m-5 text-center font-bold text-purple-700"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        Key Events
+      </motion.h1>
+      <motion.ul
+        className="list-disc list-inside space-y-2"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <a href="#" target="_blank">
-          <RainbowButton className="mt-5 lg:w-[500px] sm:w-[175px] w-[150px] mb-5 lg:h-[60px] sm:h-[55px] h-[50px] lg:text-xl sm:text-lg text-sm">
-            Key Events
-          </RainbowButton>
-        </a>
-      </motion.div>
+        {events.map((event, index) => (
+          <li key={index} className="text-black lg:text-2xl sm:text-xl text-lg">
+            {event}
+          </li>
+        ))}
+      </motion.ul>
 
       {/* Talks  */}
       <Talks />
+      <Faculty />
 
       {/* Schedule */}
       <Schedule />

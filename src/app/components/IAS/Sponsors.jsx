@@ -1,40 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 const Sponsors = () => {
-    const settings = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 3000,
-      autoplaySpeed: 0,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1024, // Tablets
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 768, // Mobile landscape
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 480, // Mobile portrait
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-      ],
-    };
-
+    
     const [sponsors, setSponsors] = useState([]);
 
     useEffect(() => {
@@ -54,24 +22,23 @@ const Sponsors = () => {
   return (
     <>
       {sponsors.length ? (
-        <div className="slider-container lg:m-7 sm:m-5 lg:h-[170px] sm:h-[120px] h-[90px] w-full m-5">
+        <div className="slider-container lg:m-8 sm:m-5 lg:h-[170px] sm:h-[120px] h-[90px] w-full m-5">
           <h2 className="text-center text-purple-600 font-bold lg:text-6xl sm:text-4xl text-2xl underline">
             Our Sponsors
           </h2>
-          <Slider {...settings}>
-            {sponsors.map((sponsor) => (
-              <div
-                key={sponsor.sponsor}
-                className="w-1/4 h-full flex items-center justify-center"
-              >
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.sponsor}
-                  className="max-h-full lg:w-[400px] sm:w-[350px] w-[250px] object-contain"
+          <div className="flex  flex-row justify-center items-center">
+            {sponsors.map((sponsor, index) => (
+              <div className="flex justify-center items-center">  
+
+              <img
+                key={index}
+                src={sponsor.logo}
+                alt={sponsor.sponsor}
+                className="lg:h-[200px] lg:w-[250px] sm:w-[150px] sm:h-[150px] w-[100px] h-[100px] object-contain m-5"
                 />
-              </div>
+                </div>
             ))}
-          </Slider>
+          </div>
         </div>
       ) : (
         <p className="text-center"> Loading .... </p>

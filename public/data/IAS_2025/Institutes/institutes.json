@@ -1,27 +1,36 @@
 [
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT Delhi",
+    "logo": "/ame/images/IAS-2025/institutes/iit_delhi.jpg"
     },
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT Bombay",
+    "logo": "/ame/images/IAS-2025/institutes/iit_bombay.svg"
     },
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT Madras",
+    "logo": "/ame/images/IAS-2025/institutes/iit_madras.jpg"
     },
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT Roorkee",
+    "logo": "/ame/images/IAS-2025/institutes/iit_roorkee.svg"
     },
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT Guwahati",
+    "logo": "/ame/images/IAS-2025/institutes/iit_guwahati.jpg"
     },
     {
-    "institute": "Company Name",
-    "logo": "/ame/images/IAS-2025/institutes/logo.png"
+    "institute": "IIT BHU",
+    "logo": "/ame/images/IAS-2025/institutes/iit_bhu.jpg"
+    },
+    {
+    "institute": "IISC Bangalore",
+    "logo": "/ame/images/IAS-2025/institutes/iisc.png"
+    },
+    {
+    "institute": "IISC Bangalore",
+    "logo": "/ame/images/IAS-2025/institutes/iisc.png"
     }
+
 
 ]

@@ -1,27 +1,43 @@
 [
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "Phantom Ametek",
+    "logo": "/ame/images/IAS-2025/companies/phantom.png"
     },
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "NTPC",
+    "logo": "/ame/images/IAS-2025/companies/NTPC.png"
     },
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "Infinity Computer System",
+    "logo": "/ame/images/IAS-2025/companies/infinity.png"
     },
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "GE Aerospace",
+    "logo": "/ame/images/IAS-2025/companies/ge_aerospace.png"
     },
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "Mathworks",
+    "logo": "/ame/images/IAS-2025/companies/MathWorks.png"
     },
     {
-    "industry": "Company Name",
-    "logo": "/ame/images/IAS-2025/companies/logo.png"
+    "industry": "Tata Steel",
+    "logo": "/ame/images/IAS-2025/companies/tata-steel.png"
+    },
+    {
+    "industry": "Adani",
+    "logo": "/ame/images/IAS-2025/companies/Adani.png"
+    },
+    {
+    "industry": "TUTr",
+    "logo": "/ame/images/IAS-2025/companies/tutr.png"
+    },
+    {
+    "industry": "Virdis",
+    "logo": "/ame/images/IAS-2025/companies/virdis.webp"
+    },
+    {
+    "industry": "Ansys",
+    "logo": "/ame/images/IAS-2025/companies/ansys.png"
     }
 
 ]

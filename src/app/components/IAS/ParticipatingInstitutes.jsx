@@ -54,7 +54,7 @@ const ParticipatingInstitutes = () => {
    return (
      <>
        {industries.length ? (
-         <div className="slider-container lg:m-7 sm:m-5 m-4 lg:h-[170px] sm:h-[120px] h-[90px] w-full">
+         <div className="slider-container lg:m-10 sm:m-7 m-6 lg:h-[170px] sm:h-[120px] h-[90px] w-full">
            <h2 className="text-center text-purple-600 font-bold lg:text-5xl sm:text-4xl text-2xl underline">
              Participating Institutes
            </h2>
@@ -62,12 +62,12 @@ const ParticipatingInstitutes = () => {
              {industries.map((industry) => (
                <div
                  key={industry.institute}
-                 className="w-1/4 h-full flex items-center justify-center"
+                 className="w-1/4 h-full mt-5 flex items-center justify-center"
                >
                  <img
                    src={industry.logo}
                    alt={industry.institute}
-                   className="max-h-full lg:w-[400px] sm:w-[350px] w-[250px] object-contain"
+                   className="max-h-full lg:w-[160px] lg:h-[160px] sm:w-[120px] sm:h-[120px] w-[80px] h-[80px] object-contain"
                  />
                </div>
              ))}

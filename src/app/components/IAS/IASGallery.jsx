@@ -116,33 +116,33 @@ const IASGallery = () => {
               ))}
             </div>
           </>
+          <div className="flex justify-center items-center mt-8">
+            <InteractiveHoverButtonLeft
+              onClick={handlePrevious}
+              disabled={currentPage === 1} // Disable Prev button if on first page
+              className={`${currentPage === 1 ? "bg-gray-400" : "bg-white"}`}
+            >
+              Prev
+            </InteractiveHoverButtonLeft>
+            <Typography className="lg:mx-4 mx-1 text-gray-700">
+              Page {currentPage} of {totalPages}
+            </Typography>
+            <InteractiveHoverButtonRight
+              onClick={handleNext}
+              disabled={currentPage === totalPages} // Disable Next button if on last page
+              className={`${
+                currentPage === totalPages ? "bg-gray-400" : "bg-white"
+              }`}
+            >
+              Next
+            </InteractiveHoverButtonRight>
+          </div>
         </>
       ) : (
         <></>
       )}
 
       {/* Pagination controls */}
-      <div className="flex justify-center items-center mt-8">
-        <InteractiveHoverButtonLeft
-          onClick={handlePrevious}
-          disabled={currentPage === 1} // Disable Prev button if on first page
-          className={`${currentPage === 1 ? "bg-gray-400" : "bg-white"}`}
-        >
-          Prev
-        </InteractiveHoverButtonLeft>
-        <Typography className="lg:mx-4 mx-1 text-gray-700">
-          Page {currentPage} of {totalPages}
-        </Typography>
-        <InteractiveHoverButtonRight
-          onClick={handleNext}
-          disabled={currentPage === totalPages} // Disable Next button if on last page
-          className={`${
-            currentPage === totalPages ? "bg-gray-400" : "bg-white"
-          }`}
-        >
-          Next
-        </InteractiveHoverButtonRight>
-      </div>
     </div>
   );
 }

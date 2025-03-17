@@ -1,38 +1,38 @@
 [
     {
-        "title": "Talk 1",
-        "speaker": "Speaker 1",
         
+        "speaker": "Dr. Aravind Bharadwaj",
+        "designation": "CTO, TuTr Hyperloop",
         "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
-        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+        "image": "/ame/images/IAS-2025/talks/Aravind_Bharadwaj.jpg"
     },
     {
-        "title": "Talk 2",
-        "speaker": "Speaker 2",
         
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
-        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+        "speaker": "Dr. Senthil Kumaran",
+        "designation": "Head Project Management, ADANI",
+        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "image": "/ame/images/IAS-2025/talks/Senthil.jpg"
     },
     {
-        "title": "Talk 3",
-        "speaker": "Speaker 3",
         
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
-        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+        "speaker": "Uma Maheshwar D",
+        "designation": "Chief Consulting Engineer, GE Aerospace India",
+        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "image": "/ame/images/IAS-2025/talks/Uma.jpg"
     },
     {
-        "title": "Talk 4",
-        "speaker": "Speaker 4",
         
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
-        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+        "speaker": "Dr. Dhruv Chandel",
+        "designation": "Senior Team Lead, MathWork",
+        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "image": "/ame/images/IAS-2025/talks/dhruv.jpg"
     },
     {
-        "title": "Talk 5",
-        "speaker": "Speaker 5",
         
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta! Nesciunt animi, sed consequatur, autem nemo aliquid, unde ullam quos maxime impedit mollitia itaque molestiae dolorum tenetur eaque iusto rem quam adipisci! Quibusdam, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio eum nemo nam. Veniam, autem.",
-        "image": "/ame/images/IAS-2025/talks/abhishek-sarkar.jpg"
+        "speaker": "N Rajesh Kumar",
+        "designation": "Chief Maintenance Technology, TATA Steel",
+        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "image": "/ame/images/IAS-2025/talks/rajesh.jpg"
     }
     
 ]
