@@ -34,7 +34,6 @@ const Talks = () => {
       >
         {talks.map((talk, index) => (
           <div key={index}>
-            
             <motion.div
               className={`flex flex-col sm:flex-row items-center my-10 p-5 rounded-xl shadow-lg bg-white ${
                 index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
@@ -50,7 +49,7 @@ const Talks = () => {
                   alt={talk.speaker}
                   className="lg:w-[250px] lg:h-[250px] sm:w-[200px] sm:h-[200px] w-[150px] h-[150px] object-cover border-4 border-purple-500"
                 />
-                <p className='lg:text-2xl sm:text-xl text-lg'>{talk.speaker}</p>
+                <p className="lg:text-2xl sm:text-xl text-lg">{talk.speaker}</p>
                 <p className="lg:text-xl sm:text-lg text-base font-bold mt-3">
                   {talk.designation}
                 </p>
@@ -59,10 +58,9 @@ const Talks = () => {
                 <p
                   className="text-gray-700 mt-2 sm:text-lg lg:text-xl text-base"
                   dangerouslySetInnerHTML={{
-                    __html: talk.description.replace(
-                      /\*\*(.*?)\*\*/g,
-                      "<b>$1</b>"
-                    ),
+                    __html: talk.description
+                      .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // Convert **bold** to <b>bold</b>
+                      .replace(/\n/g, "<br />"), // Convert newlines to <br />
                   }}
                 ></p>
               </div>

@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Schedule = () => {
+  const settings = {
+     dots: true,
+     infinite: false,
+     slidesToShow: 2,
+     slidesToScroll: 1,
+     speed: 500,
+     }
     const schedule = [
       {
         day: "Day 1 (22nd March 2025)",
@@ -338,37 +347,37 @@ const Schedule = () => {
               {
                 time: "9:00-9:25 am",
                 title:
-                  "**Dr. Chaitanya Sampara**: Emerging Trends in Advanced Manufacturing",
+                  "Dr. Chaitanya Sampara: Emerging Trends in Advanced Manufacturing",
               },
               {
                 time: "9:25-9:50 am",
                 title:
-                  "**Dr. Dhruv Chandel**: Industry Trends in Modern Engineering - The Rise of Autonomy and Software Integration",
+                  "Dr. Dhruv Chandel: Industry Trends in Modern Engineering - The Rise of Autonomy and Software Integration",
               },
               {
                 time: "9:50-10:15 am",
                 title:
-                  "**Dr. Avijit Mondal**: Application of Advanced NDE Tools for Health and Life Assessment of Critical Power Plant Components",
+                  "Dr. Avijit Mondal: Application of Advanced NDE Tools for Health and Life Assessment of Critical Power Plant Components",
               },
               {
                 time: "10:15-10:40 am",
                 title:
-                  "**Mr. Umamaheshwar**: Sustainable Aerospace – Moving Innovation Forward",
+                  "Mr. Umamaheshwar: Sustainable Aerospace – Moving Innovation Forward",
               },
               {
                 time: "10:40-11:05 am",
                 title:
-                  "**Dr. Senthil Kumaran**: Silicon PV Industries: Present Status and Challenges in India",
+                  "Dr. Senthil Kumaran: Silicon PV Industries: Present Status and Challenges in India",
               },
               {
                 time: "11:05-11:30 am",
                 title:
-                  "**Mr. N. Rajesh Kumar**: Trends and Challenges in Asset Management: An Industry Perspective",
+                  "Mr. N. Rajesh Kumar: Trends and Challenges in Asset Management: An Industry Perspective",
               },
               {
                 time: "11:30-11:55 am",
                 title:
-                  "**Ms. Kajal Khan**: Accelerating Next-Gen Semiconductor Design & Fabrication with Structural Simulations",
+                  "Dr. Kajal Khan: Accelerating Next-Gen Semiconductor Design & Fabrication with Structural Simulations",
               },
             ],
           },
@@ -394,12 +403,12 @@ const Schedule = () => {
                   {
                     time: "2:00-2:35 pm",
                     title:
-                      "**Prof. Gaurav Tomar**: Contact line instabilities in thin film flows on curved geometries",
+                      "Prof. Gaurav Tomar: Contact line instabilities in thin film flows on curved geometries",
                   },
                   {
                     time: "2:35-2:50 pm",
                     title:
-                      "**Keshav Yadav**: Experimental study of bluff-body stabilized flames in lean premixed mode",
+                      "Keshav Yadav: Experimental study of bluff-body stabilized flames in lean premixed mode",
                   },
                 ],
               },
@@ -411,12 +420,12 @@ const Schedule = () => {
                   {
                     time: "2:00-2:35 pm",
                     title:
-                      "**Prof. Shantanu Bhattacharya**: Disruptive Nanotechnology driven innovation for treatment of industrial textile wastewater",
+                      "Prof. Shantanu Bhattacharya: Disruptive Nanotechnology driven innovation for treatment of industrial textile wastewater",
                   },
                   {
                     time: "2:35-2:50 pm",
                     title:
-                      "**Ravi Kumar**: Digital Twins framework: Convolutional Network for On-Board Diagnosis of Railway Rolling Stock",
+                      "Ravi Kumar: Digital Twins framework: Convolutional Network for On-Board Diagnosis of Railway Rolling Stock",
                   },
                 ],
               },
@@ -428,12 +437,12 @@ const Schedule = () => {
                   {
                     time: "2:00-2:35 pm",
                     title:
-                      "**Dr. Sudarshan Ghosh**: Sustainable methods in Manufacturing domain",
+                      "Dr. Sudarshan Ghosh: Sustainable methods in Manufacturing domain",
                   },
                   {
                     time: "2:35-2:50 pm",
                     title:
-                      "**Sushil Kumar**: An underlying mechanism in plasma electrolytic polishing process",
+                      "Sushil Kumar: An underlying mechanism in plasma electrolytic polishing process",
                   },
                 ],
               },
@@ -460,359 +469,364 @@ const Schedule = () => {
         Schedule
       </motion.h1>
       <div className="flex justify-center items-center w-[100vw]">
-        <motion.div
-          className="grid grid-cols-2 text-left sm:w-[70vw] w-[90vw]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-        >
-          {schedule.map((day, index) => (
-            <div
-              key={index}
-              className="mb-8 p-6 bg-white text-gray-900 shadow-xl rounded-lg"
-            >
+        
+          <motion.div
+            className="text-left grid sm:grid-cols-2 grid-cols-1 sm:w-[70vw] w-[90vw]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+          >
+            
+              {schedule.map((day, index) => (
+                <div
+                  key={index}
+                  className="mb-8 p-6 bg-white text-gray-900 shadow-xl rounded-lg"
+                >
+                  <h2 className="lg:text-3xl sm:text-xl text-lg font-bold text-indigo-700 mb-4 italic">
+                    {day.day}
+                  </h2>
+                  <ul>
+                    {day.events.map((event, idx) => (
+                      <li
+                        key={idx}
+                        className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm"
+                      >
+                        <span className="font-bold text-indigo-600 italic">
+                          {event.time}:
+                        </span>{" "}
+                        {event.title}{" "}
+                        {event.venue && (
+                          <span className="text-gray-500 italic">
+                            ({event.venue})
+                          </span>
+                        )}
+                        {event.sessions && (
+                          <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
+                            {event.sessions.map((session, sIdx) => (
+                              <li key={sIdx} className="mt-2">
+                                <span className="font-bold text-blue-600 italic">
+                                  {session.venue}
+                                </span>{" "}
+                                - Chair : {session.chair}, Co-Chair :{" "}
+                                {session.coChair}
+                                <ul className="ml-4 lg:text-sm sm:text-xs text-xs text-gray-700">
+                                  {session.presentations.map((pres, pIdx) => (
+                                    <li key={pIdx} className="mt-1 italic">
+                                      <span className="font-bold text-indigo-600">
+                                        {pres.time}:
+                                      </span>{" "}
+                                      {pres.title}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            
+            <div className="mb-8 p-6 bg-white text-gray-900 shadow-xl rounded-lg">
               <h2 className="lg:text-3xl sm:text-xl text-lg font-bold text-indigo-700 mb-4 italic">
-                {day.day}
+                Day 2 (23rd March 2025)
               </h2>
               <ul>
-                {day.events.map((event, idx) => (
-                  <li
-                    key={idx}
-                    className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm"
-                  >
-                    <span className="font-bold text-indigo-600 italic">
-                      {event.time}:
-                    </span>{" "}
-                    {event.title}{" "}
-                    {event.venue && (
-                      <span className="text-gray-500 italic">
-                        ({event.venue})
-                      </span>
-                    )}
-                    {event.sessions && (
-                      <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
-                        {event.sessions.map((session, sIdx) => (
-                          <li key={sIdx} className="mt-2">
-                            <span className="font-bold text-blue-600 italic">
-                              {session.venue}
-                            </span>{" "}
-                            - Chair : {session.chair}, Co-Chair :{" "}
-                            {session.coChair}
-                            <ul className="ml-4 lg:text-sm sm:text-xs text-xs text-gray-700">
-                              {session.presentations.map((pres, pIdx) => (
-                                <li key={pIdx} className="mt-1 italic">
-                                  <span className="font-bold text-indigo-600">
-                                    {pres.time}:
-                                  </span>{" "}
-                                  {pres.title}
-                                </li>
-                              ))}
-                            </ul>
-                          </li>
-                        ))}
+                <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
+                  <span className="font-bold text-indigo-600 italic">
+                    8:30-9:00 am:
+                  </span>{" "}
+                  Tea
+                </li>
+                <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
+                  <span className="font-bold text-indigo-600 italic">
+                    9:00-12:00 pm:
+                  </span>{" "}
+                  Industry Experts{" "}
+                  <span className="text-gray-500 italic">
+                    {" "}
+                    (Outreach Auditorium)
+                  </span>
+                  <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        9:00-9:25 am:
+                      </span>{" "}
+                      Dr. Chaitanya Sampara
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        9:25-9:50 am:
+                      </span>{" "}
+                      Dr. Dhruv Chandel: Industry Trends in Modern Engineering -
+                      The Rise of Autonomy and Software Integration
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        9:50-10:15 am:
+                      </span>{" "}
+                      Dr. Avijit Mondal: Application of Advanced NDE Tools for
+                      Health and Life Assessment of Critical Power Plant
+                      Components During the Flexible Operation Regime
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        10:15-10:40 am:
+                      </span>{" "}
+                      Mr. Umamaheshwar: Sustainable Aerospace – Moving
+                      Innovation Forward
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        10:40-11:05 am:
+                      </span>{" "}
+                      Dr. Senthil Kumaran: Silicon PV Industries: Present Status
+                      and Challenges in India
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        11:05-11:30 am:
+                      </span>{" "}
+                      Mr. N. Rajesh Kumar: Trends and Challenges in Asset
+                      Management: An Industry Perspective
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-indigo-600 italic">
+                        11:30-11:55 am:
+                      </span>{" "}
+                      Ms. Kajal Khan: Accelerating Next-Gen Semiconductor Design
+                      & Fabrication with Structural Simulations
+                    </li>
+                  </ul>
+                </li>
+                <li className="mb-4 border-b pb-3 text-lg">
+                  <span className="font-bold text-indigo-600 italic">
+                    12:00-1:00 pm:
+                  </span>{" "}
+                  Industry-Academia Panel Discussion
+                  <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
+                    <li className="mt-2">
+                      <span className="font-bold text-blue-600 italic">
+                        Outreach Auditorium
+                      </span>{" "}
+                      - Chair : Dr. Chaitanya Sampara, Co-Chair : Dr. Dhruv
+                      Chandel
+                    </li>
+                  </ul>
+                </li>
+                <li className="mb-4 border-b pb-3 text-lg">
+                  <span className="font-bold text-indigo-600 italic">
+                    1:00-2:00 pm:
+                  </span>{" "}
+                  Lunch Break
+                  <span className="text-gray-500 italic"> (Outreach Lawn)</span>
+                </li>
+                <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
+                  <span className="font-bold text-indigo-600 italic">
+                    2:00-4:30 pm:
+                  </span>{" "}
+                  Parallel Sessions A3, B3, C3
+                  <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
+                    <li className="mt-2">
+                      <span className="font-bold text-blue-600 italic">
+                        Outreach Video Conference Room
+                      </span>{" "}
+                      - Chair : Prof. Gaurav Tomar, Co-Chair : Dr. Tushar
+                      Sikroria
+                      <ul className="ml-4 lg:text-sm text-xs text-gray-700">
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:00-2:35 pm:
+                          </span>{" "}
+                          Contact line instabilities in thin film flows on
+                          curved geometries
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:35-2:50 pm:
+                          </span>{" "}
+                          Keshav Yadav: Experimental study of bluff-body
+                          stabilized flames in lean premixed mode
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:50-3:05 pm:
+                          </span>{" "}
+                          AJAY PAWAR: Valorization of oily sludge from petroleum
+                          industries based on bubbling fluidized bed pyrolysis
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:05-3:20 pm:
+                          </span>{" "}
+                          Darshilkumar N Chhatrodiya: Resistance model of a
+                          composite MIEC material for oxygen transport membrane.
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:20-3:35 pm
+                          </span>{" "}
+                          Abhishek Kumar Gupta:Effect of Swirling Flow on Planar
+                          Drop Sizing, Liquid Volume Fraction, and Velocity
+                          Distribution in FB Spray
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:35-3:50 pm:
+                          </span>{" "}
+                          RADHIKA SARAWAGI: Solidification and melting of
+                          salt-water phase change material
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:50-4:05 pm:
+                          </span>{" "}
+                          BIPIN KUMAR MISHRA: Effects of the propeller
+                          slipstream on a laminar boundary layer
+                        </li>
                       </ul>
-                    )}
-                  </li>
-                ))}
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-blue-600 italic">
+                        PBCEC Big Class Room
+                      </span>{" "}
+                      - Chair : Prof. Shantanu Bhattacharya, Co-Chair : Prof.
+                      Dipayan Mukherjee
+                      <ul className="ml-4 lg:text-sm text-xs text-gray-700">
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:00-2:35 pm:
+                          </span>{" "}
+                          Disruptive Nanotechnology driven innovation for
+                          treatment of industrial textile wastewater through
+                          automated decision interventions
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:35-2:50 pm:
+                          </span>{" "}
+                          Ravi Kumar: Digital Twins framework: Convolutional
+                          Network for On-Board Diagnosis of Railway Rolling
+                          Stock
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:50-3:05 pm:
+                          </span>{" "}
+                          Saptarshi Paul: Mechanics of Shells with Defects &
+                          Computational Challenges Therein.
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:05-3:20 pm:
+                          </span>{" "}
+                          Arjun Singh Patel: Experimental analysis of the
+                          dynamics of an impact damped boring bar
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:20-3:35 pm:
+                          </span>{" "}
+                          KAPIL KUMAR: Study of a coupled axial-torsional rotary
+                          drilling system with integrated drive motor and
+                          hoisting mechanism dynamics
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:35-3:50 pm:
+                          </span>{" "}
+                          Susheel Kumar : Study of adhesion between two
+                          complementary rough elastomer (PDMS) surfaces
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:50-4:05 pm:
+                          </span>{" "}
+                          Shyam Sunder Nishad : Dimensional optimization of
+                          single-DOF planar rigid link-flapping mechanisms for
+                          high lift and low power
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="mt-2">
+                      <span className="font-bold text-blue-600 italic">
+                        PBCEC Small Class Room
+                      </span>{" "}
+                      - Chair : Dr. Sudarshan Ghosh, Co-Chair : Prof. Sarvesh
+                      Mishra
+                      <ul className="ml-4 lg:text-sm text-xs text-gray-700">
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:00-2:35 pm:
+                          </span>{" "}
+                          Dr. Sudarshan Ghosh : Sustainable methods in
+                          Manufacturing domain
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:35-2:50 pm:
+                          </span>{" "}
+                          Sushil kumar: An underlying mechanism in plasma
+                          electrolytic polishing process
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            2:50-3:05 pm:
+                          </span>{" "}
+                          Prachi Awasthi: Experimental Study of Adsorption of
+                          Antibiotics from the Wastewater Using PVDF-BNNSs Mixed
+                          Matrix Membrane
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:05-3:20 pm:
+                          </span>{" "}
+                          Shanti Mehra : Development and Experimental Evaluation
+                          of Fuel Injection System for Dimethyl Ether fuelled
+                          Engines
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:20-3:35 pm:
+                          </span>{" "}
+                          Noorul Huda : Effects of H2 premixedness on the
+                          dynamics of lean-premixed swirl stabilized flames
+                        </li>
+                        <li className="mt-1 italic">
+                          <span className="font-bold text-indigo-600">
+                            3:35-3:50 pm:
+                          </span>{" "}
+                          Atul Kumar Harmukh: Evaluation of the biomechanical
+                          response of helmeted head surrogate using conventional
+                          and silica pad-based snowboarding helmets
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
+                  <span className="font-bold text-indigo-600 italic">
+                    4:30-5:00 pm:
+                  </span>{" "}
+                  Tea
+                </li>
+                <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
+                  <span className="font-bold text-indigo-600 italic">
+                    5:00-5:30 pm:
+                  </span>{" "}
+                  Closing Ceremony
+                  <span className="text-gray-500 italic">
+                    {" "}
+                    (Outreach Auditorium)
+                  </span>
+                </li>
               </ul>
             </div>
-          ))}
-
-          <div className="mb-8 p-6 bg-white text-gray-900 shadow-xl rounded-lg">
-            <h2 className="lg:text-3xl sm:text-xl text-lg font-bold text-indigo-700 mb-4 italic">
-              Day 2 (23rd March 2025)
-            </h2>
-            <ul>
-              <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
-                <span className="font-bold text-indigo-600 italic">
-                  8:30-9:00 am:
-                </span>{" "}
-                Tea
-              </li>
-              <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
-                <span className="font-bold text-indigo-600 italic">
-                  9:00-12:00 pm:
-                </span>{" "}
-                Industry Experts{" "}
-                <span className="text-gray-500 italic">
-                  {" "}
-                  (Outreach Auditorium)
-                </span>
-                <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      9:00-9:25 am:
-                    </span>{" "}
-                    Dr. Chaitanya Sampara
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      9:25-9:50 am:
-                    </span>{" "}
-                    Dr. Dhruv Chandel: Industry Trends in Modern Engineering -
-                    The Rise of Autonomy and Software Integration
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      9:50-10:15 am:
-                    </span>{" "}
-                    Dr. Avijit Mondal: Application of Advanced NDE Tools for
-                    Health and Life Assessment of Critical Power Plant
-                    Components During the Flexible Operation Regime
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      10:15-10:40 am:
-                    </span>{" "}
-                    Mr. Umamaheshwar: Sustainable Aerospace – Moving Innovation
-                    Forward
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      10:40-11:05 am:
-                    </span>{" "}
-                    Dr. Senthil Kumaran: Silicon PV Industries: Present Status
-                    and Challenges in India
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      11:05-11:30 am:
-                    </span>{" "}
-                    Mr. N. Rajesh Kumar: Trends and Challenges in Asset
-                    Management: An Industry Perspective
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-indigo-600 italic">
-                      11:30-11:55 am:
-                    </span>{" "}
-                    Ms. Kajal Khan: Accelerating Next-Gen Semiconductor Design &
-                    Fabrication with Structural Simulations
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 border-b pb-3 text-lg">
-                <span className="font-bold text-indigo-600 italic">
-                  12:00-1:00 pm:
-                </span>{" "}
-                Industry-Academia Panel Discussion
-                <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
-                  <li className="mt-2">
-                    <span className="font-bold text-blue-600 italic">
-                      Outreach Auditorium
-                    </span>{" "}
-                    - Chair : Dr. Chaitanya Sampara, Co-Chair : Dr. Dhruv
-                    Chandel
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 border-b pb-3 text-lg">
-                <span className="font-bold text-indigo-600 italic">
-                  1:00-2:00 pm:
-                </span>{" "}
-                Lunch Break
-                <span className="text-gray-500 italic"> (Outreach Lawn)</span>
-              </li>
-              <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
-                <span className="font-bold text-indigo-600 italic">
-                  2:00-4:30 pm:
-                </span>{" "}
-                Parallel Sessions A3, B3, C3
-                <ul className="ml-4 mt-2 bg-gray-100 p-3 rounded-lg italic">
-                  <li className="mt-2">
-                    <span className="font-bold text-blue-600 italic">
-                      Outreach Video Conference Room
-                    </span>{" "}
-                    - Chair : Prof. Gaurav Tomar, Co-Chair : Dr. Tushar Sikroria
-                    <ul className="ml-4 lg:text-sm text-xs text-gray-700">
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:00-2:35 pm:
-                        </span>{" "}
-                        Contact line instabilities in thin film flows on curved
-                        geometries
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:35-2:50 pm:
-                        </span>{" "}
-                        Keshav Yadav: Experimental study of bluff-body
-                        stabilized flames in lean premixed mode
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:50-3:05 pm:
-                        </span>{" "}
-                        AJAY PAWAR: Valorization of oily sludge from petroleum
-                        industries based on bubbling fluidized bed pyrolysis
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:05-3:20 pm:
-                        </span>{" "}
-                        Darshilkumar N Chhatrodiya: Resistance model of a
-                        composite MIEC material for oxygen transport membrane.
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:20-3:35 pm
-                        </span>{" "}
-                        Abhishek Kumar Gupta:Effect of Swirling Flow on Planar
-                        Drop Sizing, Liquid Volume Fraction, and Velocity
-                        Distribution in FB Spray
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:35-3:50 pm:
-                        </span>{" "}
-                        RADHIKA SARAWAGI: Solidification and melting of
-                        salt-water phase change material
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:50-4:05 pm:
-                        </span>{" "}
-                        BIPIN KUMAR MISHRA: Effects of the propeller slipstream
-                        on a laminar boundary layer
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-blue-600 italic">
-                      PBCEC Big Class Room
-                    </span>{" "}
-                    - Chair : Prof. Shantanu Bhattacharya, Co-Chair : Prof.
-                    Dipayan Mukherjee
-                    <ul className="ml-4 lg:text-sm text-xs text-gray-700">
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:00-2:35 pm:
-                        </span>{" "}
-                        Disruptive Nanotechnology driven innovation for
-                        treatment of industrial textile wastewater through
-                        automated decision interventions
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:35-2:50 pm:
-                        </span>{" "}
-                        Ravi Kumar: Digital Twins framework: Convolutional
-                        Network for On-Board Diagnosis of Railway Rolling Stock
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:50-3:05 pm:
-                        </span>{" "}
-                        Saptarshi Paul: Mechanics of Shells with Defects &
-                        Computational Challenges Therein.
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:05-3:20 pm:
-                        </span>{" "}
-                        Arjun Singh Patel: Experimental analysis of the dynamics
-                        of an impact damped boring bar
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:20-3:35 pm:
-                        </span>{" "}
-                        KAPIL KUMAR: Study of a coupled axial-torsional rotary
-                        drilling system with integrated drive motor and hoisting
-                        mechanism dynamics
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:35-3:50 pm:
-                        </span>{" "}
-                        Susheel Kumar : Study of adhesion between two
-                        complementary rough elastomer (PDMS) surfaces
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:50-4:05 pm:
-                        </span>{" "}
-                        Shyam Sunder Nishad : Dimensional optimization of
-                        single-DOF planar rigid link-flapping mechanisms for
-                        high lift and low power
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="mt-2">
-                    <span className="font-bold text-blue-600 italic">
-                      PBCEC Small Class Room
-                    </span>{" "}
-                    - Chair : Dr. Sudarshan Ghosh, Co-Chair : Prof. Sarvesh
-                    Mishra
-                    <ul className="ml-4 lg:text-sm text-xs text-gray-700">
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:00-2:35 pm:
-                        </span>{" "}
-                        Dr. Sudarshan Ghosh : Sustainable methods in
-                        Manufacturing domain
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:35-2:50 pm:
-                        </span>{" "}
-                        Sushil kumar: An underlying mechanism in plasma
-                        electrolytic polishing process
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          2:50-3:05 pm:
-                        </span>{" "}
-                        Prachi Awasthi: Experimental Study of Adsorption of
-                        Antibiotics from the Wastewater Using PVDF-BNNSs Mixed
-                        Matrix Membrane
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:05-3:20 pm:
-                        </span>{" "}
-                        Shanti Mehra : Development and Experimental Evaluation
-                        of Fuel Injection System for Dimethyl Ether fuelled
-                        Engines
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:20-3:35 pm:
-                        </span>{" "}
-                        Noorul Huda : Effects of H2 premixedness on the dynamics
-                        of lean-premixed swirl stabilized flames
-                      </li>
-                      <li className="mt-1 italic">
-                        <span className="font-bold text-indigo-600">
-                          3:35-3:50 pm:
-                        </span>{" "}
-                        Atul Kumar Harmukh: Evaluation of the biomechanical
-                        response of helmeted head surrogate using conventional
-                        and silica pad-based snowboarding helmets
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
-                <span className="font-bold text-indigo-600 italic">
-                  4:30-5:00 pm:
-                </span>{" "}
-                Tea
-              </li>
-              <li className="mb-4 border-b pb-3 lg:text-lg sm:text-base text-sm">
-                <span className="font-bold text-indigo-600 italic">
-                  5:00-5:30 pm:
-                </span>{" "}
-                Closing Ceremony
-                <span className="text-gray-500 italic">
-                  {" "}
-                  (Outreach Auditorium)
-                </span>
-              </li>
-            </ul>
-          </div>
-        </motion.div>
+          
+          </motion.div>
       </div>
     </>
   );

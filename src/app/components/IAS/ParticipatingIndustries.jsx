@@ -14,6 +14,7 @@ const ParticipatingIndustries = () => {
     speed: 3000, // Reduce animation speed
     autoplaySpeed: 0,
     cssEase: "linear",
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024, // Tablets

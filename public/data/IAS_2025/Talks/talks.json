@@ -3,36 +3,57 @@
         
         "speaker": "Dr. Aravind Bharadwaj",
         "designation": "CTO, TuTr Hyperloop",
-        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "description": "Dr. Aravind Bharadwaj is a Co-Founder and serves as Chief Technology Officer & Board Member at Tutr Hyperloop. He earned his PhD in Electrical Engineering from Virginia Tech and his MBA from The University of Michigan, Ann Arbor. His company, TuTr Hyperloop, is an innovative startup incubated at IIT Madras, aiming to revolutionize high-speed transportation using advanced MagLev and Linear Induction Motor (LIM) technology. In collaboration with national and international partners, TuTr Hyperloop is actively working towards commercializing high-speed mobility solutions in India. Notably, the company is poised to launch the world's first commercial Hyperloop project in 2025, marking a significant milestone in transportation technology. ",
         "image": "/ame/images/IAS-2025/talks/Aravind_Bharadwaj.jpg"
+    },
+    {
+        
+        "speaker": "Dr. Avijit Mondal",
+        "designation": "Senior Scientist(DGM), NTPC Energy Technology Research Alliance",
+        "description": "Dr. Avijit Mondal is a distinguished Senior Scientist at NTPC's Energy Technology Research Alliance (NETRA). He holds a Ph.D. from IIT Kanpur, focusing on microwave sintering of metallic materials. Dr. Mondal's research expertise spans microwave processing, mechanical testing, and advanced characterization techniques. He has received the Shunsaku Katoh Award for his contributions to microwave research. Currently, he is involved in a research project focused on \"In-situ Non-Destructive Evaluation of Mechanical Properties of In-service High Temperature Pipelines/Headers of Power Plants.” ",
+        "image": "/ame/images/IAS-2025/talks/avijit.jpeg"
     },
     {
         
         "speaker": "Dr. Senthil Kumaran",
         "designation": "Head Project Management, ADANI",
-        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "description": "SENTHIL KUMARAN is currently serving as the Head of Project Management at Adani Group, where he oversees strategic planning and execution of large-scale infrastructure projects. He holds vast experience in managing complex projects across diverse sectors.",
         "image": "/ame/images/IAS-2025/talks/Senthil.jpg"
     },
     {
         
         "speaker": "Uma Maheshwar D",
         "designation": "Chief Consulting Engineer, GE Aerospace India",
-        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "description": "Uma Maheshwar D is the Chief Consulting Engineer at GE Aerospace India, with over 31 years of experience in organizational leadership, engineering strategy, and advanced technology development. He holds a Master’s degree in Mechanical Engineering from NIT Tiruchirappalli and an MBA in Aerospace Management from Toulouse Business School. At GE Aerospace, he is working with a team of 700+ member focused on designing next-generation aviation propulsion systems and digital engineering tools.",
         "image": "/ame/images/IAS-2025/talks/Uma.jpg"
     },
     {
         
         "speaker": "Dr. Dhruv Chandel",
         "designation": "Senior Team Lead, MathWork",
-        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "description": "Dr. Dhruv Chandel is a Senior Team Lead at MathWorks. He holds his Master's and PhD degrees in Mechatronics Engineering from the University of Bath, UK. He collaborates extensively with academia and industry on computational thinking, deep learning, and model-based design. He has vast experience in multi-domain modelling and simulation, robotics, artificial intelligence, and control systems design. His recent projects focus on deep learning applications in image processing, robotics, and non-destructive evaluation, significantly impacting both academic research and industrial innovation. He is also a founding member of SAE Aerospace India Board and a keynote speaker at international conferences.",
         "image": "/ame/images/IAS-2025/talks/dhruv.jpg"
+    },
+    {
+        
+        "speaker": "Dr. Chaitanya Sampara",
+        "designation": "Managing Director, Virdis Chemicals",
+        "description": "Dr. Chaitanya Sampara is the Manging Director at Viridis Chemicals and handles new product development, scale-up and operations. He obtained his doctoral degree at the University of Michigan in the area of emissions catalysis. He also served as visiting research scientist at the University of Houston. He worked on several catalyst technologies at the Pacific Northwest National Laboratory (PNNL) in Richland, Washington as a Senior Scientist. ",
+        "image": "/ame/images/IAS-2025/talks/chaitanya.jpeg"
     },
     {
         
         "speaker": "N Rajesh Kumar",
         "designation": "Chief Maintenance Technology, TATA Steel",
-        "description": "Lorem ipsum dolor, sit amet **consectetur adipisicing elit**. Quos, dicta! **Nesciunt animi**, sed consequatur, autem nemo aliquid.",
+        "description": "N. Rajesh Kumar is the Chief of Maintenance Technology at Tata Steel. He holds a Bachelor of Technology degree in Mechanical Engineering from Birla Institute of Technology, Mesra. At Tata Steel, he has played a pivotal role in predictive maintenance, process control, and quality assurance across critical operations.",
         "image": "/ame/images/IAS-2025/talks/rajesh.jpg"
+    },
+    {
+        
+        "speaker": "Dr. Kajal Khan",
+        "designation": "Senior Application Engineer, Ansys",
+        "description": "Dr. Kajal Khan is a Senior Application Engineer at Ansys, specializing in additive manufacturing, structural mechanics, and electronics reliability. Dr. Khan has contributed to innovative projects, including automated workflows for solder joint reliability and coupled electro-thermo-structural analysis of batteries. Dr. Khan is a recognized expert in simulation-driven engineering and applied computational research.",
+        "image": "/ame/images/IAS-2025/talks/kajal.jpeg"
     }
     
 ]

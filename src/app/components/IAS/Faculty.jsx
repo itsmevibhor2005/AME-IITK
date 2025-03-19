@@ -64,10 +64,9 @@ const Faculty = () => {
                 <p
                   className="text-gray-700 mt-2 sm:text-lg lg:text-xl text-base"
                   dangerouslySetInnerHTML={{
-                    __html: talk.description.replace(
-                      /\*\*(.*?)\*\*/g,
-                      "<b>$1</b>"
-                    ),
+                    __html: talk.description
+                      .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // Convert **bold** to <b>bold</b>
+                      .replace(/\n/g, "<br />"), // Convert newlines to <br />
                   }}
                 ></p>
               </div>

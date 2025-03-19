@@ -15,6 +15,7 @@ const ParticipatingInstitutes = () => {
      autoplaySpeed: 0,
      cssEase: "linear",
      rtl: true,
+     pauseOnHover: false,
      responsive: [
        {
          breakpoint: 1024, // Tablets
