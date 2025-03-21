@@ -217,19 +217,7 @@ export default function IndustryAcademiaSymposium() {
 
       {/* ME Dept */}
 
-      {/* Submissions  */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <a href="#" target="_blank">
-          <RainbowButton className="mt-10 lg:w-[500px] sm:w-[175px] w-[150px] mb-5 lg:h-[60px] sm:h-[55px] h-[50px] lg:text-xl sm:text-lg text-sm">
-            Submissions
-          </RainbowButton>
-        </a>
-      </motion.div>
+      
 
       {/* Key Events  */}
       <motion.h1

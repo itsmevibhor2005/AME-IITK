@@ -11,9 +11,9 @@ const ParticipatingInstitutes = () => {
      slidesToShow: 4,
      slidesToScroll: 1,
      autoplay: true,
-     speed: 3000,
-     autoplaySpeed: 0,
-     cssEase: "linear",
+     speed: 3000, // Reduce transition time for a smoother effect
+     autoplaySpeed: 0, // Increase this to avoid instant jumping
+     cssEase: "linear", // Use a smoother easing function
      rtl: true,
      pauseOnHover: false,
      responsive: [
